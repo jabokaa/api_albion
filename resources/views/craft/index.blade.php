@@ -160,14 +160,14 @@ function fetchItemDetails() {
                         $('#item-info').html(infoHtml);
 
                         if (item.ingredientes && Array.isArray(item.ingredientes)) {
-                            let tableHtml = `<table class=\"table table-bordered\"><thead><tr><th>Nome</th><th>Cidade</th><th>Preço</th><th>Qtd</th><th>Custo Total</th><th>Item Count</th><th>Data Preço</th></tr></thead><tbody>`;
+                            let tableHtml = `<table class=\"table table-bordered\"><thead><tr><th>Nome</th><th style='width:60px;'>Encantamento</th><th>Cidade</th><th>Preço</th><th>Qtd</th><th>Custo Total</th><th>Item Count</th><th style='min-width:120px;'>Data Preço</th></tr></thead><tbody>`;
                             let somaTotal = 0;
                             item.ingredientes.forEach(ing => {
                                 let preco = parseFloat(ing.price) || 0;
                                 let qtd = parseInt(ing.qtd) || 0;
                                 let custoTotal = preco * qtd;
                                 somaTotal += custoTotal;
-                                tableHtml += `<tr><td>${ing.name_pt || '-'}<\/td><td>${ing.city || '-'}<\/td><td>${ing.price || '-'}<\/td><td>${ing.qtd || '-'}<\/td><td>${custoTotal.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2})}<\/td><td>${ing.item_count || '-'}<\/td><td>${ing.query_date || '-'}<\/td></tr>`;
+                                tableHtml += `<tr><td>${ing.name_pt || '-'}<\/td><td>${ing.encantamento || '-'}<\/td><td>${ing.city || '-'}<\/td><td>${ing.price || '-'}<\/td><td>${ing.qtd || '-'}<\/td><td>${custoTotal.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2})}<\/td><td>${ing.item_count || '-'}<\/td><td>${ing.query_date || '-'}<\/td></tr>`;
                             });
                             tableHtml += `</tbody></table>`;
                             tableHtml += `<div class=\"mt-2\"><strong>Custo Total dos Ingredientes: </strong> ${somaTotal.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>`;

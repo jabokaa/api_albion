@@ -150,6 +150,7 @@ class CraftController extends Controller
                 ->whereIn('city', $citys)
                 ->where('price', '>', 0)
                 ->orderBy('price', 'asc');
+                
 
             if ($cidadeDoIngrediente) {
                 $ingredienteQuery->where('city', $cidadeDoIngrediente);
@@ -174,6 +175,7 @@ class CraftController extends Controller
             $ingredienteQuery['qtd'] = $ingrediente->amount;
 
             $ingredienteQuery['item_count'] = $quantidadeDeItensPorCidade[$ingredienteQuery['city']] ?? 0;
+            $ingredienteQuery['encantamento'] = str_contains($ingredienteQuery['external_id'], '@') ? explode('@', $ingredienteQuery['external_id'])[1] : '0';
             $item['ingredientes'][] = $ingredienteQuery;
         }
         return response()->json(['data' => $item]);
