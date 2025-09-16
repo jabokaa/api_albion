@@ -1,4 +1,992 @@
 {
+  "Acid Potion": {
+    "Fine Spirit Paws": 1,
+    "Dragon Teasel": 48,
+    "Crenellated Burdock": 24,
+    "Goat's Milk": 12
+  },
+  "Acid Potion@1": {
+    "Fine Spirit Paws": 1,
+    "Dragon Teasel": 48,
+    "Crenellated Burdock": 24,
+    "Goat's Milk": 12,
+    "Basic Arcane Extract": 30
+  },
+  "Acid Potion@2": {
+    "Fine Spirit Paws": 1,
+    "Dragon Teasel": 48,
+    "Crenellated Burdock": 24,
+    "Goat's Milk": 12,
+    "Refined Arcane Extract": 30
+  },
+  "Acid Potion@3": {
+    "Fine Spirit Paws": 1,
+    "Dragon Teasel": 48,
+    "Crenellated Burdock": 24,
+    "Goat's Milk": 12,
+    "Pure Arcane Extract": 30
+  },
+  "Berserk Potion": {
+    "Fine Werewolf Fangs": 1,
+    "Elusive Foxglove": 24,
+    "Arcane Agaric": 12,
+    "Potato Schnapps": 6
+  },
+  "Berserk Potion@1": {
+    "Fine Werewolf Fangs": 1,
+    "Elusive Foxglove": 24,
+    "Arcane Agaric": 12,
+    "Potato Schnapps": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Berserk Potion@2": {
+    "Fine Werewolf Fangs": 1,
+    "Elusive Foxglove": 24,
+    "Arcane Agaric": 12,
+    "Potato Schnapps": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Berserk Potion@3": {
+    "Fine Werewolf Fangs": 1,
+    "Elusive Foxglove": 24,
+    "Arcane Agaric": 12,
+    "Potato Schnapps": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Calming Potion": {
+    "Fine Shadow Claws": 1,
+    "Dragon Teasel": 48,
+    "Crenellated Burdock": 24,
+    "Arcane Agaric": 12
+  },
+  "Calming Potion@1": {
+    "Fine Shadow Claws": 1,
+    "Dragon Teasel": 48,
+    "Crenellated Burdock": 24,
+    "Arcane Agaric": 12,
+    "Basic Arcane Extract": 30
+  },
+  "Calming Potion@2": {
+    "Fine Shadow Claws": 1,
+    "Dragon Teasel": 48,
+    "Crenellated Burdock": 24,
+    "Arcane Agaric": 12,
+    "Refined Arcane Extract": 30
+  },
+  "Calming Potion@3": {
+    "Fine Shadow Claws": 1,
+    "Dragon Teasel": 48,
+    "Crenellated Burdock": 24,
+    "Arcane Agaric": 12,
+    "Pure Arcane Extract": 30
+  },
+  "Cleansing Potion": {
+    "Fine Sylvian Root": 1,
+    "Dragon Teasel": 24,
+    "Brightleaf Comfrey": 12,
+    "Goat's Butter": 6
+  },
+  "Cleansing Potion@1": {
+    "Fine Sylvian Root": 1,
+    "Dragon Teasel": 24,
+    "Brightleaf Comfrey": 12,
+    "Goat's Butter": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Cleansing Potion@2": {
+    "Fine Sylvian Root": 1,
+    "Dragon Teasel": 24,
+    "Brightleaf Comfrey": 12,
+    "Goat's Butter": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Cleansing Potion@3": {
+    "Fine Sylvian Root": 1,
+    "Dragon Teasel": 24,
+    "Brightleaf Comfrey": 12,
+    "Goat's Butter": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Energy Potion": {
+    "Crenellated Burdock": 24,
+    "Goat's Milk": 6
+  },
+  "Energy Potion@1": {
+    "Crenellated Burdock": 24,
+    "Goat's Milk": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Energy Potion@2": {
+    "Crenellated Burdock": 24,
+    "Goat's Milk": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Energy Potion@3": {
+    "Crenellated Burdock": 24,
+    "Goat's Milk": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Gathering Potion": {
+    "Fine Runestone Tooth": 1,
+    "Sheep's Butter": 24,
+    "Elusive Foxglove": 12,
+    "Dragon Teasel": 6
+  },
+  "Gathering Potion@1": {
+    "Fine Runestone Tooth": 1,
+    "Sheep's Butter": 24,
+    "Elusive Foxglove": 12,
+    "Dragon Teasel": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Gathering Potion@2": {
+    "Fine Runestone Tooth": 1,
+    "Sheep's Butter": 24,
+    "Elusive Foxglove": 12,
+    "Dragon Teasel": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Gathering Potion@3": {
+    "Fine Runestone Tooth": 1,
+    "Sheep's Butter": 24,
+    "Elusive Foxglove": 12,
+    "Dragon Teasel": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Gigantify Potion": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goose Eggs": 6
+  },
+  "Gigantify Potion@1": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goose Eggs": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Gigantify Potion@2": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goose Eggs": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Gigantify Potion@3": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goose Eggs": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Healing Potion": {
+    "Crenellated Burdock": 24,
+    "Hen Eggs": 6
+  },
+  "Healing Potion@1": {
+    "Crenellated Burdock": 24,
+    "Hen Eggs": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Healing Potion@2": {
+    "Crenellated Burdock": 24,
+    "Hen Eggs": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Healing Potion@3": {
+    "Crenellated Burdock": 24,
+    "Hen Eggs": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Hellfire Potion": {
+    "Fine Imp's Horn": 1,
+    "Sheep's Milk": 24,
+    "Elusive Foxglove": 12,
+    "Hen Eggs": 6
+  },
+  "Hellfire Potion@1": {
+    "Fine Imp's Horn": 1,
+    "Sheep's Milk": 24,
+    "Elusive Foxglove": 12,
+    "Hen Eggs": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Hellfire Potion@2": {
+    "Fine Imp's Horn": 1,
+    "Sheep's Milk": 24,
+    "Elusive Foxglove": 12,
+    "Hen Eggs": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Hellfire Potion@3": {
+    "Fine Imp's Horn": 1,
+    "Sheep's Milk": 24,
+    "Elusive Foxglove": 12,
+    "Hen Eggs": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Invisibility Potion": {
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Dragon Teasel": 36,
+    "Cow's Milk": 18,
+    "Pumpkin Moonshine": 18
+  },
+  "Invisibility Potion@1": {
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Dragon Teasel": 36,
+    "Cow's Milk": 18,
+    "Pumpkin Moonshine": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Invisibility Potion@2": {
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Dragon Teasel": 36,
+    "Cow's Milk": 18,
+    "Pumpkin Moonshine": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Invisibility Potion@3": {
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Dragon Teasel": 36,
+    "Cow's Milk": 18,
+    "Pumpkin Moonshine": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Acid Potion": {
+    "Excellent Spirit Paws": 1,
+    "Firetouched Mullein": 144,
+    "Elusive Foxglove": 72,
+    "Potato Schnapps": 72,
+    "Sheep's Milk": 36,
+    "Corn Hooch": 36
+  },
+  "Major Acid Potion@1": {
+    "Excellent Spirit Paws": 1,
+    "Firetouched Mullein": 144,
+    "Elusive Foxglove": 72,
+    "Potato Schnapps": 72,
+    "Sheep's Milk": 36,
+    "Corn Hooch": 36,
+    "Basic Arcane Extract": 90
+  },
+  "Major Acid Potion@2": {
+    "Excellent Spirit Paws": 1,
+    "Firetouched Mullein": 144,
+    "Elusive Foxglove": 72,
+    "Potato Schnapps": 72,
+    "Sheep's Milk": 36,
+    "Corn Hooch": 36,
+    "Refined Arcane Extract": 90
+  },
+  "Major Acid Potion@3": {
+    "Excellent Spirit Paws": 1,
+    "Firetouched Mullein": 144,
+    "Elusive Foxglove": 72,
+    "Potato Schnapps": 72,
+    "Sheep's Milk": 36,
+    "Corn Hooch": 36,
+    "Pure Arcane Extract": 90
+  },
+  "Major Berserk Potion": {
+    "Excellent Werewolf Fangs": 1,
+    "Ghoul Yarrow": 72,
+    "Brightleaf Comfrey": 36,
+    "Potato Schnapps": 36,
+    "Corn Hooch": 18,
+    "Pumpkin Moonshine": 18
+  },
+  "Major Berserk Potion@1": {
+    "Excellent Werewolf Fangs": 1,
+    "Ghoul Yarrow": 72,
+    "Brightleaf Comfrey": 36,
+    "Potato Schnapps": 36,
+    "Corn Hooch": 18,
+    "Pumpkin Moonshine": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Berserk Potion@2": {
+    "Excellent Werewolf Fangs": 1,
+    "Ghoul Yarrow": 72,
+    "Brightleaf Comfrey": 36,
+    "Potato Schnapps": 36,
+    "Corn Hooch": 18,
+    "Pumpkin Moonshine": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Berserk Potion@3": {
+    "Excellent Werewolf Fangs": 1,
+    "Ghoul Yarrow": 72,
+    "Brightleaf Comfrey": 36,
+    "Potato Schnapps": 36,
+    "Corn Hooch": 18,
+    "Pumpkin Moonshine": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Calming Potion": {
+    "Excellent Shadow Claws": 1,
+    "Firetouched Mullein": 144,
+    "Elusive Foxglove": 72,
+    "Brightleaf Comfrey": 72,
+    "Arcane Agaric": 36,
+    "Corn Hooch": 36
+  },
+  "Major Calming Potion@1": {
+    "Excellent Shadow Claws": 1,
+    "Firetouched Mullein": 144,
+    "Elusive Foxglove": 72,
+    "Brightleaf Comfrey": 72,
+    "Arcane Agaric": 36,
+    "Corn Hooch": 36,
+    "Basic Arcane Extract": 90
+  },
+  "Major Calming Potion@2": {
+    "Excellent Shadow Claws": 1,
+    "Firetouched Mullein": 144,
+    "Elusive Foxglove": 72,
+    "Brightleaf Comfrey": 72,
+    "Arcane Agaric": 36,
+    "Corn Hooch": 36,
+    "Refined Arcane Extract": 90
+  },
+  "Major Calming Potion@3": {
+    "Excellent Shadow Claws": 1,
+    "Firetouched Mullein": 144,
+    "Elusive Foxglove": 72,
+    "Brightleaf Comfrey": 72,
+    "Arcane Agaric": 36,
+    "Corn Hooch": 36,
+    "Pure Arcane Extract": 90
+  },
+  "Major Cleansing Potion": {
+    "Excellent Sylvian Root": 1,
+    "Firetouched Mullein": 72,
+    "Crenellated Burdock": 36,
+    "Brightleaf Comfrey": 36,
+    "Sheep's Butter": 18,
+    "Corn Hooch": 18
+  },
+  "Major Cleansing Potion@1": {
+    "Excellent Sylvian Root": 1,
+    "Firetouched Mullein": 72,
+    "Crenellated Burdock": 36,
+    "Brightleaf Comfrey": 36,
+    "Sheep's Butter": 18,
+    "Corn Hooch": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Cleansing Potion@2": {
+    "Excellent Sylvian Root": 1,
+    "Firetouched Mullein": 72,
+    "Crenellated Burdock": 36,
+    "Brightleaf Comfrey": 36,
+    "Sheep's Butter": 18,
+    "Corn Hooch": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Cleansing Potion@3": {
+    "Excellent Sylvian Root": 1,
+    "Firetouched Mullein": 72,
+    "Crenellated Burdock": 36,
+    "Brightleaf Comfrey": 36,
+    "Sheep's Butter": 18,
+    "Corn Hooch": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Energy Potion": {
+    "Elusive Foxglove": 72,
+    "Sheep's Milk": 18,
+    "Potato Schnapps": 18
+  },
+  "Major Energy Potion@1": {
+    "Elusive Foxglove": 72,
+    "Sheep's Milk": 18,
+    "Potato Schnapps": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Energy Potion@2": {
+    "Elusive Foxglove": 72,
+    "Sheep's Milk": 18,
+    "Potato Schnapps": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Energy Potion@3": {
+    "Elusive Foxglove": 72,
+    "Sheep's Milk": 18,
+    "Potato Schnapps": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Gathering Potion": {
+    "Excellent Runestone Tooth": 1,
+    "Cow's Butter": 72,
+    "Ghoul Yarrow": 36,
+    "Firetouched Mullein": 36,
+    "Elusive Foxglove": 18,
+    "Pumpkin Moonshine": 18
+  },
+  "Major Gathering Potion@1": {
+    "Excellent Runestone Tooth": 1,
+    "Cow's Butter": 72,
+    "Ghoul Yarrow": 36,
+    "Firetouched Mullein": 36,
+    "Elusive Foxglove": 18,
+    "Pumpkin Moonshine": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Gathering Potion@2": {
+    "Excellent Runestone Tooth": 1,
+    "Cow's Butter": 72,
+    "Ghoul Yarrow": 36,
+    "Firetouched Mullein": 36,
+    "Elusive Foxglove": 18,
+    "Pumpkin Moonshine": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Gathering Potion@3": {
+    "Excellent Runestone Tooth": 1,
+    "Cow's Butter": 72,
+    "Ghoul Yarrow": 36,
+    "Firetouched Mullein": 36,
+    "Elusive Foxglove": 18,
+    "Pumpkin Moonshine": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Gigantify Potion": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Goose Eggs": 18,
+    "Corn Hooch": 18
+  },
+  "Major Gigantify Potion@1": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Goose Eggs": 18,
+    "Corn Hooch": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Gigantify Potion@2": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Goose Eggs": 18,
+    "Corn Hooch": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Gigantify Potion@3": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Goose Eggs": 18,
+    "Corn Hooch": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Healing Potion": {
+    "Elusive Foxglove": 72,
+    "Goose Eggs": 18,
+    "Potato Schnapps": 18
+  },
+  "Major Healing Potion@1": {
+    "Elusive Foxglove": 72,
+    "Goose Eggs": 18,
+    "Potato Schnapps": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Healing Potion@2": {
+    "Elusive Foxglove": 72,
+    "Goose Eggs": 18,
+    "Potato Schnapps": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Healing Potion@3": {
+    "Elusive Foxglove": 72,
+    "Goose Eggs": 18,
+    "Potato Schnapps": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Hellfire Potion": {
+    "Cow's Milk": 72,
+    "Ghoul Yarrow": 36,
+    "Firetouched Mullein": 36,
+    "Goose Eggs": 18,
+    "Pumpkin Moonshine": 18
+  },
+  "Major Hellfire Potion@1": {
+    "Cow's Milk": 72,
+    "Ghoul Yarrow": 36,
+    "Firetouched Mullein": 36,
+    "Goose Eggs": 18,
+    "Pumpkin Moonshine": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Hellfire Potion@2": {
+    "Cow's Milk": 72,
+    "Ghoul Yarrow": 36,
+    "Firetouched Mullein": 36,
+    "Goose Eggs": 18,
+    "Pumpkin Moonshine": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Hellfire Potion@3": {
+    "Cow's Milk": 72,
+    "Ghoul Yarrow": 36,
+    "Firetouched Mullein": 36,
+    "Goose Eggs": 18,
+    "Pumpkin Moonshine": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Poison Potion": {
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Dragon Teasel": 36,
+    "Cow's Milk": 18,
+    "Pumpkin Moonshine": 18
+  },
+  "Major Poison Potion@1": {
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Dragon Teasel": 36,
+    "Cow's Milk": 18,
+    "Pumpkin Moonshine": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Poison Potion@2": {
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Dragon Teasel": 36,
+    "Cow's Milk": 18,
+    "Pumpkin Moonshine": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Poison Potion@3": {
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Dragon Teasel": 36,
+    "Cow's Milk": 18,
+    "Pumpkin Moonshine": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Resistance Potion": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Crenellated Burdock": 36,
+    "Sheep's Milk": 18,
+    "Corn Hooch": 18
+  },
+  "Major Resistance Potion@1": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Crenellated Burdock": 36,
+    "Sheep's Milk": 18,
+    "Corn Hooch": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Resistance Potion@2": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Crenellated Burdock": 36,
+    "Sheep's Milk": 18,
+    "Corn Hooch": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Resistance Potion@3": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Crenellated Burdock": 36,
+    "Sheep's Milk": 18,
+    "Corn Hooch": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Sticky Potion": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Crenellated Burdock": 36,
+    "Goose Eggs": 18,
+    "Corn Hooch": 18
+  },
+  "Major Sticky Potion@1": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Crenellated Burdock": 36,
+    "Goose Eggs": 18,
+    "Corn Hooch": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Sticky Potion@2": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Crenellated Burdock": 36,
+    "Goose Eggs": 18,
+    "Corn Hooch": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Sticky Potion@3": {
+    "Firetouched Mullein": 72,
+    "Elusive Foxglove": 36,
+    "Crenellated Burdock": 36,
+    "Goose Eggs": 18,
+    "Corn Hooch": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Major Tornado in a Bottle": {
+    "Excellent Dawnfeather": 1,
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Corn Hooch": 36,
+    "Goose Eggs": 18,
+    "Pumpkin Moonshine": 18
+  },
+  "Major Tornado in a Bottle@1": {
+    "Excellent Dawnfeather": 1,
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Corn Hooch": 36,
+    "Goose Eggs": 18,
+    "Pumpkin Moonshine": 18,
+    "Basic Arcane Extract": 45
+  },
+  "Major Tornado in a Bottle@2": {
+    "Excellent Dawnfeather": 1,
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Corn Hooch": 36,
+    "Goose Eggs": 18,
+    "Pumpkin Moonshine": 18,
+    "Refined Arcane Extract": 45
+  },
+  "Major Tornado in a Bottle@3": {
+    "Excellent Dawnfeather": 1,
+    "Ghoul Yarrow": 72,
+    "Firetouched Mullein": 36,
+    "Corn Hooch": 36,
+    "Goose Eggs": 18,
+    "Pumpkin Moonshine": 18,
+    "Pure Arcane Extract": 45
+  },
+  "Minor Acid Potion": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Spirit Paws": 1
+  },
+  "Minor Acid Potion@1": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Spirit Paws": 1,
+    "Basic Arcane Extract": 10
+  },
+  "Minor Acid Potion@2": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Spirit Paws": 1,
+    "Refined Arcane Extract": 10
+  },
+  "Minor Acid Potion@3": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Spirit Paws": 1,
+    "Pure Arcane Extract": 10
+  },
+  "Minor Berserk Potion": {
+    "Rugged Werewolf Fangs": 1,
+    "Crenellated Burdock": 8
+  },
+  "Minor Berserk Potion@1": {
+    "Rugged Werewolf Fangs": 1,
+    "Crenellated Burdock": 8,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Berserk Potion@2": {
+    "Rugged Werewolf Fangs": 1,
+    "Crenellated Burdock": 8,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Berserk Potion@3": {
+    "Rugged Werewolf Fangs": 1,
+    "Crenellated Burdock": 8,
+    "Pure Arcane Extract": 5
+  },
+  "Minor Calming Potion": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Shadow Claws": 16
+  },
+  "Minor Calming Potion@1": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Shadow Claws": 16,
+    "Basic Arcane Extract": 10
+  },
+  "Minor Calming Potion@2": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Shadow Claws": 16,
+    "Refined Arcane Extract": 10
+  },
+  "Minor Calming Potion@3": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Shadow Claws": 16,
+    "Pure Arcane Extract": 10
+  },
+  "Minor Cleansing Potion": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Sylvian Root": 1
+  },
+  "Minor Cleansing Potion@1": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Sylvian Root": 1,
+    "Basic Arcane Extract": 10
+  },
+  "Minor Cleansing Potion@2": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Sylvian Root": 1,
+    "Refined Arcane Extract": 10
+  },
+  "Minor Cleansing Potion@3": {
+    "Brightleaf Comfrey": 16,
+    "Rugged Sylvian Root": 1,
+    "Pure Arcane Extract": 10
+  },
+  "Minor Energy Potion": {
+    "Arcane Agaric": 8
+  },
+  "Minor Energy Potion@1": {
+    "Arcane Agaric": 8,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Energy Potion@2": {
+    "Arcane Agaric": 8,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Energy Potion@3": {
+    "Arcane Agaric": 8,
+    "Pure Arcane Extract": 5
+  },
+  "Minor Gathering Potion": {
+    "Rugged Runestone Tooth": 1,
+    "Goat's Butter": 8
+  },
+  "Minor Gathering Potion@1": {
+    "Rugged Runestone Tooth": 1,
+    "Goat's Butter": 8,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Gathering Potion@2": {
+    "Rugged Runestone Tooth": 1,
+    "Goat's Butter": 8,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Gathering Potion@3": {
+    "Rugged Runestone Tooth": 1,
+    "Goat's Butter": 8,
+    "Pure Arcane Extract": 5
+  },
+  "Minor Gigantify Potion": {
+    "Brightleaf Comfrey": 8
+  },
+  "Minor Gigantify Potion@1": {
+    "Brightleaf Comfrey": 8,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Gigantify Potion@2": {
+    "Brightleaf Comfrey": 8,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Gigantify Potion@3": {
+    "Brightleaf Comfrey": 8,
+    "Pure Arcane Extract": 5
+  },
+  "Minor Healing Potion": {
+    "Arcane Agaric": 8
+  },
+  "Minor Healing Potion@1": {
+    "Arcane Agaric": 8,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Healing Potion@2": {
+    "Arcane Agaric": 8,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Healing Potion@3": {
+    "Arcane Agaric": 8,
+    "Pure Arcane Extract": 5
+  },
+  "Minor Hellfire Potion": {
+    "Rugged Imp's Horn": 1,
+    "Goat's Milk": 8
+  },
+  "Minor Hellfire Potion@1": {
+    "Rugged Imp's Horn": 1,
+    "Goat's Milk": 8,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Hellfire Potion@2": {
+    "Rugged Imp's Horn": 1,
+    "Goat's Milk": 8,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Hellfire Potion@3": {
+    "Rugged Imp's Horn": 1,
+    "Goat's Milk": 8,
+    "Pure Arcane Extract": 5
+  },
+  "Minor Poison Potion": {
+    "Crenellated Burdock": 8,
+    "Brightleaf Comfrey": 4
+  },
+  "Minor Poison Potion@1": {
+    "Crenellated Burdock": 8,
+    "Brightleaf Comfrey": 4,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Poison Potion@2": {
+    "Crenellated Burdock": 8,
+    "Brightleaf Comfrey": 4,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Poison Potion@3": {
+    "Crenellated Burdock": 8,
+    "Brightleaf Comfrey": 4,
+    "Pure Arcane Extract": 5
+  },
+  "Minor Resistance Potion": {
+    "Brightleaf Comfrey": 8
+  },
+  "Minor Resistance Potion@1": {
+    "Brightleaf Comfrey": 8,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Resistance Potion@2": {
+    "Brightleaf Comfrey": 8,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Resistance Potion@3": {
+    "Brightleaf Comfrey": 8,
+    "Pure Arcane Extract": 5
+  },
+  "Minor Sticky Potion": {
+    "Brightleaf Comfrey": 8
+  },
+  "Minor Sticky Potion@1": {
+    "Brightleaf Comfrey": 8,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Sticky Potion@2": {
+    "Brightleaf Comfrey": 8,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Sticky Potion@3": {
+    "Brightleaf Comfrey": 8,
+    "Pure Arcane Extract": 5
+  },
+  "Minor Tornado in a Bottle": {
+    "Rugged Dawnfeather": 1,
+    "Crenellated Burdock": 8
+  },
+  "Minor Tornado in a Bottle@1": {
+    "Rugged Dawnfeather": 1,
+    "Crenellated Burdock": 8,
+    "Basic Arcane Extract": 5
+  },
+  "Minor Tornado in a Bottle@2": {
+    "Rugged Dawnfeather": 1,
+    "Crenellated Burdock": 8,
+    "Refined Arcane Extract": 5
+  },
+  "Minor Tornado in a Bottle@3": {
+    "Rugged Dawnfeather": 1,
+    "Crenellated Burdock": 8,
+    "Pure Arcane Extract": 5
+  },
+  "Poison Potion": {
+    "Elusive Foxglove": 24,
+    "Dragon Teasel": 12,
+    "Brightleaf Comfrey": 12,
+    "Sheep's Milk": 6
+  },
+  "Poison Potion@1": {
+    "Elusive Foxglove": 24,
+    "Dragon Teasel": 12,
+    "Brightleaf Comfrey": 12,
+    "Sheep's Milk": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Poison Potion@2": {
+    "Elusive Foxglove": 24,
+    "Dragon Teasel": 12,
+    "Brightleaf Comfrey": 12,
+    "Sheep's Milk": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Poison Potion@3": {
+    "Elusive Foxglove": 24,
+    "Dragon Teasel": 12,
+    "Brightleaf Comfrey": 12,
+    "Sheep's Milk": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Resistance Potion": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goat's Milk": 6
+  },
+  "Resistance Potion@1": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goat's Milk": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Resistance Potion@2": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goat's Milk": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Resistance Potion@3": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goat's Milk": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Sticky Potion": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goose Eggs": 6
+  },
+  "Sticky Potion@1": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goose Eggs": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Sticky Potion@2": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goose Eggs": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Sticky Potion@3": {
+    "Dragon Teasel": 24,
+    "Crenellated Burdock": 12,
+    "Goose Eggs": 6,
+    "Pure Arcane Extract": 15
+  },
+  "Tornado in a Bottle": {
+    "Fine Dawnfeather": 1,
+    "Elusive Foxglove": 24,
+    "Dragon Teasel": 12,
+    "Hen Eggs": 6
+  },
+  "Tornado in a Bottle@1": {
+    "Fine Dawnfeather": 1,
+    "Elusive Foxglove": 24,
+    "Dragon Teasel": 12,
+    "Hen Eggs": 6,
+    "Basic Arcane Extract": 15
+  },
+  "Tornado in a Bottle@2": {
+    "Fine Dawnfeather": 1,
+    "Elusive Foxglove": 24,
+    "Dragon Teasel": 12,
+    "Hen Eggs": 6,
+    "Refined Arcane Extract": 15
+  },
+  "Tornado in a Bottle@3": {
+    "Fine Dawnfeather": 1,
+    "Elusive Foxglove": 24,
+    "Dragon Teasel": 12,
+    "Hen Eggs": 6,
+    "Pure Arcane Extract": 15
+  },
   "Avalonian Beef Sandwich": {
     "Bread": 36,
     "Raw Beef": 72,
@@ -230,9 +1218,6 @@
     "Bread": 36,
     "Special Fish Sauce": 90
   },
-  "Blackbog Clam": {
-    "undefined": 30
-  },
   "Blackbog Clam Soup": {
     "Blackbog Clam": 1,
     "Cabbage": 6,
@@ -259,18 +1244,6 @@
     "Dragon Teasel": 6,
     "Raw Goose": 6,
     "Special Fish Sauce": 27
-  },
-  "Bluefin Tuna": {
-    "undefined": 10
-  },
-  "Bluescale Cod": {
-    "undefined": 4
-  },
-  "Bluescale Pike": {
-    "undefined": 4
-  },
-  "Brightscale Zander": {
-    "undefined": 8
   },
   "Cabbage Soup": {
     "Cabbage": 144
@@ -328,21 +1301,6 @@
   "Chocolate": {
     "Surprise Egg": 2
   },
-  "Clearhaze Snapper": {
-    "undefined": 20
-  },
-  "Common Herring": {
-    "undefined": 1
-  },
-  "Common Rudd": {
-    "undefined": 1
-  },
-  "Danglemouth Catfish": {
-    "undefined": 10
-  },
-  "Deadwater Eel": {
-    "undefined": 30
-  },
   "Deadwater Eel Stew": {
     "Deadwater Eel": 1,
     "Pumpkin": 6,
@@ -369,9 +1327,6 @@
     "Ghoul Yarrow": 6,
     "Cow's Milk": 6,
     "Special Fish Sauce": 27
-  },
-  "Deepwater Kraken": {
-    "undefined": 49
   },
   "Deepwater Kraken Salad": {
     "Deepwater Kraken": 1,
@@ -400,21 +1355,9 @@
     "Raw Mutton": 6,
     "Special Fish Sauce": 27
   },
-  "Drybrook Crab": {
-    "undefined": 20
-  },
-  "Dusthole Crab": {
-    "undefined": 30
-  },
   "Fancy Fish Sauce": {
     "Chopped Fish": 45,
     "Seaweed": 3
-  },
-  "Flatshore Plaice": {
-    "undefined": 3
-  },
-  "Frostpeak Deadeye": {
-    "undefined": 30
   },
   "Frostpeak Deadeye Pie": {
     "Frostpeak Deadeye": 1,
@@ -516,9 +1459,6 @@
     "Goat's Milk": 6,
     "Special Fish Sauce": 30
   },
-  "Greenmoor Clam": {
-    "undefined": 10
-  },
   "Greenmoor Clam Soup": {
     "Greenmoor Clam": 1,
     "Carrots": 2
@@ -537,9 +1477,6 @@
     "Greenmoor Clam": 1,
     "Carrots": 2,
     "Special Fish Sauce": 3
-  },
-  "Greenriver Eel": {
-    "undefined": 10
   },
   "Greenriver Eel Stew": {
     "Greenriver Eel": 1,
@@ -563,12 +1500,6 @@
     "Turnips": 1,
     "Crenellated Burdock": 1,
     "Special Fish Sauce": 3
-  },
-  "Lowriver Crab": {
-    "undefined": 10
-  },
-  "Midwater Octopus": {
-    "undefined": 33
   },
   "Midwater Octopus Salad": {
     "Midwater Octopus": 1,
@@ -597,9 +1528,6 @@
     "Raw Goat": 2,
     "Special Fish Sauce": 9
   },
-  "Mountain Blindeye": {
-    "undefined": 20
-  },
   "Mountain Blindeye Pie": {
     "Mountain Blindeye": 1,
     "Cabbage": 2,
@@ -626,9 +1554,6 @@
     "Dragon Teasel": 2,
     "Goose Eggs": 2,
     "Special Fish Sauce": 9
-  },
-  "Murkwater Clam": {
-    "undefined": 20
   },
   "Murkwater Clam Soup": {
     "Murkwater Clam": 1,
@@ -930,15 +1855,6 @@
     "Goose Eggs": 18,
     "Special Fish Sauce": 90
   },
-  "undefined": {
-    "": 6
-  },
-  "undefined@1": {
-    "": 900
-  },
-  "undefined@2": {
-    "": 337
-  },
   "Pork Pie": {
     "Bundle of Corn": 18,
     "Raw Pork": 72,
@@ -985,12 +1901,6 @@
     "Cabbage": 72,
     "Special Fish Sauce": 90
   },
-  "Puremist Snapper": {
-    "undefined": 30
-  },
-  "Redspring Eel": {
-    "undefined": 20
-  },
   "Redspring Eel Stew": {
     "Redspring Eel": 1,
     "Potatoes": 2,
@@ -1018,8 +1928,35 @@
     "Sheep's Milk": 2,
     "Special Fish Sauce": 9
   },
-  "River Sturgeon": {
-    "undefined": 14
+  "undefined": {
+    "Avalonian Goat Stew": 4,
+    "Avalonian Mutton Stew": 6,
+    "Beef Stew": 8,
+    "Deadwater Eel Stew": 8,
+    "Goat Stew": 4,
+    "Greenriver Eel Stew": 4,
+    "Mutton Stew": 6,
+    "Redspring Eel Stew": 6
+  },
+  "undefined@1": {
+    "Avalonian Goat Stew": 700,
+    "Avalonian Mutton Stew": 900,
+    "Beef Stew": 1100,
+    "Deadwater Eel Stew": 1100,
+    "Goat Stew": 700,
+    "Greenriver Eel Stew": 700,
+    "Mutton Stew": 900,
+    "Redspring Eel Stew": 900
+  },
+  "undefined@2": {
+    "Avalonian Goat Stew": 94,
+    "Avalonian Mutton Stew": 283,
+    "Beef Stew": 817,
+    "Deadwater Eel Stew": 978,
+    "Goat Stew": 91,
+    "Greenriver Eel Stew": 116,
+    "Mutton Stew": 272,
+    "Redspring Eel Stew": 337
   },
   "Roast Chicken": {
     "Raw Chicken": 8,
@@ -1167,9 +2104,6 @@
     "Goat's Milk": 1,
     "Special Fish Sauce": 3
   },
-  "Rushwater Lurcher": {
-    "undefined": 20
-  },
   "Rushwater Lurcher Sandwich": {
     "Rushwater Lurcher": 1,
     "Potatoes": 2,
@@ -1200,9 +2134,6 @@
   "Seaweed Salad": {
     "Seaweed": 10
   },
-  "Shallowshore Squid": {
-    "undefined": 16
-  },
   "Shallowshore Squid Salad": {
     "Shallowshore Squid": 1,
     "Beans": 1,
@@ -1230,18 +2161,6 @@
     "Chopped Fish": 135,
     "Seaweed": 9
   },
-  "Spotted Trout": {
-    "undefined": 6
-  },
-  "Spotted Wolffish": {
-    "undefined": 6
-  },
-  "Steelscale Swordfish": {
-    "undefined": 14
-  },
-  "Stonestream Lurcher": {
-    "undefined": 10
-  },
   "Stonestream Lurcher Sandwich": {
     "Stonestream Lurcher": 1,
     "Turnips": 1,
@@ -1264,18 +2183,6 @@
     "Turnips": 1,
     "Goat's Butter": 1,
     "Special Fish Sauce": 3
-  },
-  "Striped Carp": {
-    "undefined": 2
-  },
-  "Striped Mackerel": {
-    "undefined": 2
-  },
-  "Strongfin Salmon": {
-    "undefined": 8
-  },
-  "Thunderfall Lurcher": {
-    "undefined": 30
   },
   "Thunderfall Lurcher Sandwich": {
     "Thunderfall Lurcher": 1,
@@ -1323,9 +2230,6 @@
     "Sheaf of Wheat": 24,
     "Special Fish Sauce": 30
   },
-  "Upland Coldeye": {
-    "undefined": 10
-  },
   "Upland Coldeye Pie": {
     "Upland Coldeye": 1,
     "Flour": 1,
@@ -1363,8 +2267,5 @@
   "Wheat Soup@3": {
     "Sheaf of Wheat": 48,
     "Special Fish Sauce": 30
-  },
-  "Whitefog Snapper": {
-    "undefined": 10
   }
 }

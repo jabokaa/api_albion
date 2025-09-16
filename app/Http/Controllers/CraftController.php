@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Item;
+use App\Models\ItemRecipe;
+use App\Models\ItemsDayPrice;
+use App\Models\ItemsWeeklyPrice;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -14,7 +17,7 @@ class CraftController extends Controller
         $cityBuy = $request->input('city_buy');
         $orderBy = $request->input('order_by', 'lucro');
         $orderDir = $request->input('order_dir', 'desc');
-        $porcentagem = $request->input('max_porcentagem', 100000);
+        $porcentagem = $request->input('max_porcentagem', 200);
         $minCount = $request->input('min_count', 100);
         $nameItem = $request->input('name_item', '');
 
@@ -71,7 +74,9 @@ class CraftController extends Controller
                 'value_item.maior_valor as valor',
                 DB::raw('SUM(ingredientes.menor_valor * ir.amount) as custo'),
                 DB::raw('(value_item.maior_valor - SUM(ingredientes.menor_valor * ir.amount)) as lucro'),
-                DB::raw('((value_item.maior_valor - SUM(ingredientes.menor_valor * ir.amount))/ value_item.maior_valor * 100) as porcentagem'),
+                DB::raw('(
+                    (value_item.maior_valor - SUM(ingredientes.menor_valor * ir.amount)) / SUM(ingredientes.menor_valor * ir.amount) * 100
+                ) as porcentagem'),
                 'ir.recipe'
             )->join('item_recipes as ir', 'ir.item_id', '=', 'items.id')
             ->joinSub($newSubItemValue, 'value_item', function ($join) {
@@ -94,4 +99,112 @@ class CraftController extends Controller
         $results = $results->get();
         return view('craft.index', compact('results'));
     }
+
+    public function details(Request $request, $dataType)
+    {
+        $receita = $request->input('receita');
+        $item_id = $request->input('item_id');
+        $cidadeDoItem = $request->input('cidade_do_item', '');
+        $cidadeDoIngrediente = $request->input('cidade_do_ingrediente', '');
+
+        $item = Item::find($item_id)->toArray();
+
+        $item['encantamento'] = str_contains($item['external_id'], '@') ? explode('@', $item['external_id'])[1] : '0';
+        // Escolhe o modelo conforme $dataType
+        $priceModel = $dataType === 'semanal' ? ItemsWeeklyPrice::class : ItemsDayPrice::class;
+
+        $query = $priceModel::from((new $priceModel)->getTable() . ' as main')
+            ->where('main.item_id', $item_id)
+            ->join('items_weekly_prices as iwp', function ($join) {
+                $join->on('main.city', '=', 'iwp.city')
+                    ->on('main.quality', '=', 'iwp.quality')
+                    ->on('main.item_id', '=', 'iwp.item_id');
+            })
+            ->where('iwp.item_count', '>', 100)
+            ->select('main.*', 'iwp.item_count as qtd');
+        if ($cidadeDoItem) {
+            $query->where('main.city', $cidadeDoItem);
+        }
+        $item['dadosDeMercado'] = $query->orderBy('price', 'desc')->first();
+        
+        $item['ingredientes'] = [];
+
+        $receita = ItemRecipe::with(['itemIngrediente'])
+            ->where('item_id', $item_id)
+            ->where('recipe', $receita)
+            ->get();
+
+        foreach ($receita as $ingrediente) {
+
+            $quantidadeDeItensPorCidade = ItemsWeeklyPrice::where('item_id', $ingrediente->item_ingrediente_id)
+                ->where('city', '!=', 'Black Market')
+                ->select('city', 'item_count')
+                ->where('item_count', '>', 100)
+                ->get()->pluck('item_count', 'city')?->toArray();
+
+            $citys = array_keys($quantidadeDeItensPorCidade);
+            $tableName = (new $priceModel)->getTable();
+            $ingredienteQuery = (new $priceModel)->where('item_id', $ingrediente->item_ingrediente_id)
+                ->join('items', 'items.id', '=', $tableName . '.item_id')
+                ->where('city', '!=', 'Black Market')
+                ->whereIn('city', $citys)
+                ->where('price', '>', 0)
+                ->orderBy('price', 'asc');
+
+            if ($cidadeDoIngrediente) {
+                $ingredienteQuery->where('city', $cidadeDoIngrediente);
+            }
+
+            if ($cidadeDoIngrediente) {
+                $ingredienteQuery->where('city', $cidadeDoIngrediente);
+            }
+            
+            if ($cidadeDoIngrediente) {
+                $ingredienteQuery->where('city', $cidadeDoIngrediente);
+            }
+
+            $ingredienteQuery = $ingredienteQuery->first();
+
+            if (!$ingredienteQuery || !$quantidadeDeItensPorCidade) {
+                $item['ingredientes']['error'] = 'Dados insuficientes para o ingrediente ' . $ingrediente->itemIngrediente->name_pt;
+                break;
+            }
+
+            $ingredienteQuery = $ingredienteQuery->toArray();
+            $ingredienteQuery['qtd'] = $ingrediente->amount;
+
+            $ingredienteQuery['item_count'] = $quantidadeDeItensPorCidade[$ingredienteQuery['city']] ?? 0;
+            $item['ingredientes'][] = $ingredienteQuery;
+        }
+        return response()->json(['data' => $item]);
+    }
 }
+
+
+// {
+//    "data":{
+//       "encantamento": 1,
+//       "name_sp":"Armadura de soldado del maestro",
+//       "name_pt":"Armadura de Soldado do Mestre",
+//       "dadosDeMercado":{
+//          "id":137801,
+//          "item_id":3421,
+//          "query_date":"2025-09-15",
+//          "city":"Black Market",
+//          "item_count":null,
+//          "price":"0.00",
+//       },
+//       "ingredientes":[
+//          {
+//             "id":1090,
+//             "query_date":"2025-09-14",
+//             "city":"Thetford",
+//             "item_count":16789,
+//             "price":"6760.00",
+//             "quality":1,
+//             "name_pt":"Barra de Aço Runita Incomum",
+//             "qtd":16
+//          }
+//       ]
+//    }
+// }
