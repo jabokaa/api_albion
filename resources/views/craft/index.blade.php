@@ -1,24 +1,44 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <h2>Compra</h2>
+<div>
+    <h2>Craft</h2>
     <form method="GET" class="mb-4">
         <div class="row">
             <div class="col">
-                <input type="text" name="city" class="form-control" placeholder="Cidade" value="{{ request('city') }}">
+                <select name="city_sale" class="form-control">
+                    <option value="">Cidade venda</option>
+                    <option value="Bridgewatch" {{ request('city_sale') == 'Bridgewatch' ? 'selected' : '' }}>Bridgewatch</option>
+                    <option value="Martlock" {{ request('city_sale') == 'Martlock' ? 'selected' : '' }}>Martlock</option>
+                    <option value="Fort Sterling" {{ request('city_sale') == 'Fort Sterling' ? 'selected' : '' }}>Fort Sterling</option>
+                    <option value="Lymhurst" {{ request('city_sale') == 'Lymhurst' ? 'selected' : '' }}>Lymhurst</option>
+                    <option value="Thetford" {{ request('city_sale') == 'Thetford' ? 'selected' : '' }}>Thetford</option>
+                    <option value="Caerleon" {{ request('city_sale') == 'Caerleon' ? 'selected' : '' }}>Caerleon</option>
+                    <option value="Black Market" {{ request('city_sale') == 'Black Market' ? 'selected' : '' }}>Black Market</option>
+                </select>
             </div>
             <div class="col">
-                <input type="number" name="quality" class="form-control" placeholder="Qualidade" value="{{ request('quality') }}">
+                <select name="city_buy" class="form-control">
+                    <option value="">Cidade Compra</option>
+                    <option value="Bridgewatch" {{ request('city_buy') == 'Bridgewatch' ? 'selected' : '' }}>Bridgewatch</option>
+                    <option value="Martlock" {{ request('city_buy') == 'Martlock' ? 'selected' : '' }}>Martlock</option>
+                    <option value="Fort Sterling" {{ request('city_buy') == 'Fort Sterling' ? 'selected' : '' }}>Fort Sterling</option>
+                    <option value="Lymhurst" {{ request('city_buy') == 'Lymhurst' ? 'selected' : '' }}>Lymhurst</option>
+                    <option value="Thetford" {{ request('city_buy') == 'Thetford' ? 'selected' : '' }}>Thetford</option>
+                    <option value="Caerleon" {{ request('city_buy') == 'Caerleon' ? 'selected' : '' }}>Caerleon</option>
+                    <option value="Black Market" {{ request('city_buy') == 'Black Market' ? 'selected' : '' }}>Black Market</option>
+                </select>
+            </div>
+            <div class="col">
+                <input type="text" name="name_item" class="form-control" placeholder="Nome do item" value="{{ request('name_item') }}">
             </div>
             <div class="col">
                 <input type="number" name="min_count" class="form-control" placeholder="Qtd mínima" value="{{ request('min_count', 100) }}">
             </div>
             <div class="col">
                 <select name="order_by" class="form-control">
-                    <option value="diferenca" {{ request('order_by') == 'diferenca' ? 'selected' : '' }}>Lucro</option>
-                    <option value="vender_por" {{ request('order_by') == 'vender_por' ? 'selected' : '' }}>Preço Venda</option>
-                    <option value="comprar_por" {{ request('order_by') == 'comprar_por' ? 'selected' : '' }}>Preço Compra</option>
+                    <option value="lucro" {{ request('order_by') == 'lucro' ? 'selected' : '' }}>Lucro</option>
+                    <option value="porcentagem" {{ request('order_by') == 'porcentagem' ? 'selected' : '' }}>Porcentagem</option>
                 </select>
             </div>
             <div class="col">
@@ -37,15 +57,12 @@
             <tr>
                 <th>External Id</th>
                 <th>Item</th>
-                <th>Qualidade</th>
+                <th>Encantamento</th>
+                <th>Custo</th>
+                <th>Valor venda</th>
                 <th>Lucro</th>
-                <th>Porcentagem Lucro</th>
-                <th>Comprar em</th>
-                <th>Qtd Compra</th>
-                <th>Preço Compra</th>
-                <th>Vender em</th>
-                <th>Qtd Venda</th>
-                <th>Preço Venda</th>
+                <th>Porcentagem</th>
+                <th>Receita</th>
             </tr>
         </thead>
         <tbody>
@@ -53,15 +70,13 @@
             <tr>
                 <td>{{ $row->external_id }}</td>
                 <td>{{ $row->name_pt }} / {{ $row->name_sp }}</td>
-                <td>{{ $row->quality }}</td>
-                <td>{{ number_format($row->diferenca, 2, ',', '.') }}</td>
-                <td>{{ $row->porcemtagem_lucro }}%</td>
-                <td>{{ $row->comprar_em }} </td>
-                <td>{{ $row->item_count_comprar }}</td>
-                <td>-{{ number_format($row->comprar_por, 2, ',', '.') }}$</td>
-                <td>{{ $row->vender_em }}</td>
-                <td>{{ $row->item_count_vender }}</td>
-                <td>+{{ number_format($row->vender_por, 2, ',', '.') }}$</td>
+                <td>{{ $row->encantamento }}</td>
+                <td>{{ number_format($row->custo, 2, ',', '.') }}$</td>
+                <td>{{ number_format($row->valor, 2, ',', '.') }}$</td>
+                <td>{{ number_format($row->lucro, 2, ',', '.') }}$</td>
+                <td>{{ number_format($row->porcentagem, 2, ',', '.') }}%</td>
+                <td>{{ $row->recipe }} </td>
+                <td><a href="https://albiononline.com/en/market/#!/item/{{ $row->external_id }}" target="_blank" class="btn btn-sm btn-info">Ver no Market</a></td>
             </tr>
             @endforeach
         </tbody>

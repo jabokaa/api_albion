@@ -2,103 +2,88 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Item;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class CraftController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request, $dataType)
     {
-        $city = $request->input('city');
-        $quality = $request->input('quality');
-        $orderBy = $request->input('order_by', 'diferenca');
+        $citySale = $request->input('city_sale');
+        $cityBuy = $request->input('city_buy');
+        $orderBy = $request->input('order_by', 'lucro');
         $orderDir = $request->input('order_dir', 'desc');
+        $porcentagem = $request->input('max_porcentagem', 100000);
         $minCount = $request->input('min_count', 100);
+        $nameItem = $request->input('name_item', '');
 
-        $query = "
-        select
-            iwp.external_id,
-            iwp.name_pt,
-            iwp.name_sp,
-            iwp.quality,
-            iwp.diferenca,
-            info_maior.city vender_em,
-            info_maior.item_count item_count_vender,
-            info_maior.price vender_por,
-            info_menor.city comprar_em,
-            info_menor.item_count item_count_comprar,
-            (iwp.diferenca/info_menor.price) * 100 as porcemtagem_lucro,
-            info_menor.price comprar_por
-        from
-            (
-                select
-                    i.external_id,
-                    i.name_pt,
-                    i.name_sp ,
-                    iwp.item_id,
-                    iwp.quality,
-                    max(iwp.price) maior,
-                    min(iwp.price) menor,
-                    max(iwp.price) - min(iwp.price) diferenca,
-                    AVG(iwp.item_count) qtd_avg
-                from
-                    items_weekly_prices iwp
-                join items i on
-                    i.id = iwp.item_id
-                where
-                    iwp.item_count > ?
-                group by
-                    iwp.item_id,
-                    iwp.quality
-            ) iwp
-        join (
-            select
-                info_maior.city,
-                info_maior.price,
-                info_maior.item_id,
-                info_maior.item_count,
-                info_maior.quality
-            from
-                items_weekly_prices as info_maior
-        ) info_maior on
-            info_maior.price = iwp.maior
-            and info_maior.quality = iwp.quality
-            and info_maior.item_id = iwp.item_id
-        join (
-            select
-                info_menor.city,
-                info_menor.price,
-                info_menor.item_id ,
-                info_menor.item_count,
-                info_menor.quality
-            from
-                items_weekly_prices as info_menor
-        ) info_menor on
-            info_menor.price = iwp.menor
-            and info_menor.quality = iwp.quality
-            and info_menor.item_id = iwp.item_id
-        WHERE (iwp.diferenca/info_menor.price) * 100 <= 150
-        ";
+        $tableMain = $dataType !== 'semanal' ? 'items_day_prices' : 'items_weekly_prices';
+        $subItemValue = DB::query()->from("$tableMain as market_data")
+            ->select(
+                'market_data.item_id',
+                DB::raw('MIN(NULLIF(market_data.price, 0)) as menor_valor'),
+                DB::raw('MAX(market_data.price) as maior_valor'),
+            )
+            ->groupBy('market_data.item_id')
+            ->havingRaw('MAX(market_data.price) > 0');
 
-        $bindings = [$minCount];
-        $where = [];
-        if ($city) {
-            $where[] = "(info_maior.city = ? OR info_menor.city = ?)";
-            $bindings[] = $city;
-            $bindings[] = $city;
+        if ($dataType !== 'semanal') {
+            $subItemValue->join('items_weekly_prices as iwp', function ($join) {
+                $join->on('market_data.city', '=', 'iwp.city')
+                    ->on('market_data.quality', '=', 'iwp.quality')
+                    ->on('market_data.item_id', '=', 'iwp.item_id');
+            })->where('iwp.item_count', '>=', $minCount);
+        } else {
+            $subItemValue->where('market_data.item_count', '>=', $minCount);
         }
-        if ($quality) {
-            $where[] = "iwp.quality = ?";
-            $bindings[] = $quality;
-        }
-        if ($where) {
-            $query .= " WHERE " . implode(' AND ', $where);
-        }
-        $query .= " ORDER BY $orderBy $orderDir";
 
-        $results = DB::select($query, $bindings);
+        $newSubItemValue = clone $subItemValue;
+        $newSubItemRecipeValue = clone $subItemValue;
+        $newSubItemRecipeValue->where('market_data.city', "!=", 'Black Market');
+
+        if ($citySale) {
+            $newSubItemValue->where('market_data.city', $citySale);
+        }
+        
+        if ($cityBuy) {
+            $newSubItemRecipeValue->where('market_data.city', $cityBuy);
+        }
+
+        $results = DB::query()->from("items")->select(
+                'items.id',
+                'items.external_id',
+                'items.name_pt',
+                'items.name_sp',
+                DB::raw("
+                    CASE 
+                        WHEN items.external_id LIKE '%@%' THEN SUBSTRING_INDEX(items.external_id, '@', -1)
+                        ELSE '0'
+                    END as encantamento
+                "),
+                'value_item.maior_valor as valor',
+                DB::raw('SUM(ingredientes.menor_valor * ir.amount) as custo'),
+                DB::raw('(value_item.maior_valor - SUM(ingredientes.menor_valor * ir.amount)) as lucro'),
+                DB::raw('((value_item.maior_valor - SUM(ingredientes.menor_valor * ir.amount))/ value_item.maior_valor * 100) as porcentagem'),
+                'ir.recipe'
+            )->join('item_recipes as ir', 'ir.item_id', '=', 'items.id')
+            ->joinSub($newSubItemValue, 'value_item', function ($join) {
+                $join->on('value_item.item_id', '=', 'items.id');
+            })
+            ->joinSub($newSubItemRecipeValue, 'ingredientes', function ($join) {
+                $join->on('ingredientes.item_id', '=', 'ir.item_ingrediente_id');
+            })
+            ->groupBy('items.id', 'ir.recipe', 'value_item.maior_valor', 'items.name_pt')
+            ->having('porcentagem', '<', $porcentagem)
+            ->orderBy($orderBy, $orderDir);
+
+        if ($nameItem) {
+            $results->where('items.name_pt', 'like', "%$nameItem%")
+                ->orWhere('items.name_sp', 'like', "%$nameItem%");
+        }
+
+        // dd( $results->toSql(), $results->getBindings() );
+        $results = $results->get();
         return view('craft.index', compact('results'));
     }
-
-
 }

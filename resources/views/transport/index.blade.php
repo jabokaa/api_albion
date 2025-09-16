@@ -1,15 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <h2>Oportunidades de Trade Diário</h2>
+<div>
+    <h2>Transport</h2>
     <form method="GET" class="mb-4">
         <div class="row">
             <div class="col">
-                <input type="text" name="city_sale" class="form-control" placeholder="Cidade da venda" value="{{ request('city_sale') }}">
+                <select name="city_sale" class="form-control">
+                    <option value="">Cidade venda</option>
+                    <option value="Bridgewatch" {{ request('city_sale') == 'Bridgewatch' ? 'selected' : '' }}>Bridgewatch</option>
+                    <option value="Martlock" {{ request('city_sale') == 'Martlock' ? 'selected' : '' }}>Martlock</option>
+                    <option value="Fort Sterling" {{ request('city_sale') == 'Fort Sterling' ? 'selected' : '' }}>Fort Sterling</option>
+                    <option value="Lymhurst" {{ request('city_sale') == 'Lymhurst' ? 'selected' : '' }}>Lymhurst</option>
+                    <option value="Thetford" {{ request('city_sale') == 'Thetford' ? 'selected' : '' }}>Thetford</option>
+                    <option value="Caerleon" {{ request('city_sale') == 'Caerleon' ? 'selected' : '' }}>Caerleon</option>
+                    <option value="Black Market" {{ request('city_sale') == 'Black Market' ? 'selected' : '' }}>Black Market</option>
+                </select>
             </div>
             <div class="col">
-                <input type="text" name="city_buy" class="form-control" placeholder="Cidade da compra" value="{{ request('city_buy') }}">
+                <select name="city_buy" class="form-control">
+                    <option value="">Cidade Compra</option>
+                    <option value="Bridgewatch" {{ request('city_buy') == 'Bridgewatch' ? 'selected' : '' }}>Bridgewatch</option>
+                    <option value="Martlock" {{ request('city_buy') == 'Martlock' ? 'selected' : '' }}>Martlock</option>
+                    <option value="Fort Sterling" {{ request('city_buy') == 'Fort Sterling' ? 'selected' : '' }}>Fort Sterling</option>
+                    <option value="Lymhurst" {{ request('city_buy') == 'Lymhurst' ? 'selected' : '' }}>Lymhurst</option>
+                    <option value="Thetford" {{ request('city_buy') == 'Thetford' ? 'selected' : '' }}>Thetford</option>
+                    <option value="Caerleon" {{ request('city_buy') == 'Caerleon' ? 'selected' : '' }}>Caerleon</option>
+                    <option value="Black Market" {{ request('city_buy') == 'Black Market' ? 'selected' : '' }}>Black Market</option>
+                </select>
             </div>
             <div class="col">
                 <input type="number" name="max_lucro" class="form-control" placeholder="% Lucro Máximo" value="{{ request('max_lucro', 200) }}">

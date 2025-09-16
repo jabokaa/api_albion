@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 
 // Rotas para CraftController
-Route::get('/craft', [CraftController::class, 'index'])->name('craft.index');
+Route::get('/craft/{dataType}', [CraftController::class, 'index'])->name('craft.index');
 Route::get('/craft/details', [CraftController::class, 'details'])->name('craft.details');
 
 // Rotas para TransportDayController
