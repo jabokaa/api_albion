@@ -57,10 +57,17 @@ class CraftController extends Controller
                 'items.name_sp',
                 DB::raw("
                     CASE 
+                        WHEN COUNT(ingredientes.item_id) < COUNT(ir.item_ingrediente_id) THEN 'ingrediente em falta'
+                        ELSE 'receita completa'
+                    END as status
+                "),
+                DB::raw("
+                    CASE 
                         WHEN items.external_id LIKE '%@%' THEN SUBSTRING_INDEX(items.external_id, '@', -1)
                         ELSE '0'
                     END as encantamento
                 "),
+
                 'value_item.maior_valor as valor',
                 DB::raw('SUM(ingredientes.menor_valor * ir.amount) as custo'),
                 DB::raw('(value_item.maior_valor - SUM(ingredientes.menor_valor * ir.amount)) as lucro'),
@@ -70,11 +77,12 @@ class CraftController extends Controller
             ->joinSub($newSubItemValue, 'value_item', function ($join) {
                 $join->on('value_item.item_id', '=', 'items.id');
             })
-            ->joinSub($newSubItemRecipeValue, 'ingredientes', function ($join) {
+            ->leftJoinSub($newSubItemRecipeValue, 'ingredientes', function ($join) {
                 $join->on('ingredientes.item_id', '=', 'ir.item_ingrediente_id');
             })
             ->groupBy('items.id', 'ir.recipe', 'value_item.maior_valor', 'items.name_pt')
             ->having('porcentagem', '<', $porcentagem)
+            ->having('status', 'receita completa')
             ->orderBy($orderBy, $orderDir);
 
         if ($nameItem) {
