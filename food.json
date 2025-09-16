@@ -1,0 +1,1370 @@
+{
+  "Avalonian Beef Sandwich": {
+    "Bread": 36,
+    "Raw Beef": 72,
+    "Cow's Butter": 18,
+    "Avalonian Energy": 90
+  },
+  "Avalonian Beef Sandwich@1": {
+    "Bread": 36,
+    "Raw Beef": 72,
+    "Cow's Butter": 18,
+    "Avalonian Energy": 90,
+    "Basic Fish Sauce": 90
+  },
+  "Avalonian Beef Sandwich@2": {
+    "Bread": 36,
+    "Raw Beef": 72,
+    "Cow's Butter": 18,
+    "Avalonian Energy": 90,
+    "Fancy Fish Sauce": 90
+  },
+  "Avalonian Beef Sandwich@3": {
+    "Bread": 36,
+    "Raw Beef": 72,
+    "Cow's Butter": 18,
+    "Avalonian Energy": 90,
+    "Special Fish Sauce": 90
+  },
+  "Avalonian Beef Stew": {
+    "Bundle of Corn": 36,
+    "Pumpkin": 36,
+    "Raw Beef": 72,
+    "Avalonian Energy": 90
+  },
+  "Avalonian Beef Stew@1": {
+    "Bundle of Corn": 36,
+    "Pumpkin": 36,
+    "Raw Beef": 72,
+    "Avalonian Energy": 90,
+    "Basic Fish Sauce": 90
+  },
+  "Avalonian Beef Stew@2": {
+    "Bundle of Corn": 36,
+    "Pumpkin": 36,
+    "Raw Beef": 72,
+    "Avalonian Energy": 90,
+    "Fancy Fish Sauce": 90
+  },
+  "Avalonian Beef Stew@3": {
+    "Bundle of Corn": 36,
+    "Pumpkin": 36,
+    "Raw Beef": 72,
+    "Avalonian Energy": 90,
+    "Special Fish Sauce": 90
+  },
+  "Avalonian Goat Sandwich": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Goat's Butter": 2,
+    "Avalonian Energy": 10
+  },
+  "Avalonian Goat Sandwich@1": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Goat's Butter": 2,
+    "Avalonian Energy": 10,
+    "Basic Fish Sauce": 10
+  },
+  "Avalonian Goat Sandwich@2": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Goat's Butter": 2,
+    "Avalonian Energy": 10,
+    "Fancy Fish Sauce": 10
+  },
+  "Avalonian Goat Sandwich@3": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Goat's Butter": 2,
+    "Avalonian Energy": 10,
+    "Special Fish Sauce": 10
+  },
+  "Avalonian Goat Stew": {
+    "Carrots": 4,
+    "Raw Goat": 8,
+    "Turnips": 4,
+    "Avalonian Energy": 10
+  },
+  "Avalonian Goat Stew@1": {
+    "Carrots": 4,
+    "Raw Goat": 8,
+    "Turnips": 4,
+    "Avalonian Energy": 10,
+    "Basic Fish Sauce": 10
+  },
+  "Avalonian Goat Stew@2": {
+    "Carrots": 4,
+    "Raw Goat": 8,
+    "Turnips": 4,
+    "Avalonian Energy": 10,
+    "Fancy Fish Sauce": 10
+  },
+  "Avalonian Goat Stew@3": {
+    "Carrots": 4,
+    "Raw Goat": 8,
+    "Turnips": 4,
+    "Avalonian Energy": 10,
+    "Special Fish Sauce": 10
+  },
+  "Avalonian Mutton Sandwich": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Sheep's Butter": 6,
+    "Avalonian Energy": 30
+  },
+  "Avalonian Mutton Sandwich@1": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Sheep's Butter": 6,
+    "Avalonian Energy": 30,
+    "Basic Fish Sauce": 30
+  },
+  "Avalonian Mutton Sandwich@2": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Sheep's Butter": 6,
+    "Avalonian Energy": 30,
+    "Fancy Fish Sauce": 30
+  },
+  "Avalonian Mutton Sandwich@3": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Sheep's Butter": 6,
+    "Avalonian Energy": 30,
+    "Special Fish Sauce": 30
+  },
+  "Avalonian Mutton Stew": {
+    "Cabbage": 12,
+    "Potatoes": 12,
+    "Raw Mutton": 24,
+    "Avalonian Energy": 30
+  },
+  "Avalonian Mutton Stew@1": {
+    "Cabbage": 12,
+    "Potatoes": 12,
+    "Raw Mutton": 24,
+    "Avalonian Energy": 30,
+    "Basic Fish Sauce": 30
+  },
+  "Avalonian Mutton Stew@2": {
+    "Cabbage": 12,
+    "Potatoes": 12,
+    "Raw Mutton": 24,
+    "Avalonian Energy": 30,
+    "Fancy Fish Sauce": 30
+  },
+  "Avalonian Mutton Stew@3": {
+    "Cabbage": 12,
+    "Potatoes": 12,
+    "Raw Mutton": 24,
+    "Avalonian Energy": 30,
+    "Special Fish Sauce": 30
+  },
+  "Basic Fish Sauce": {
+    "Chopped Fish": 15,
+    "Seaweed": 1
+  },
+  "Bean Salad": {
+    "Beans": 8,
+    "Carrots": 8
+  },
+  "Bean Salad@1": {
+    "Beans": 8,
+    "Carrots": 8,
+    "Basic Fish Sauce": 10
+  },
+  "Bean Salad@2": {
+    "Beans": 8,
+    "Carrots": 8,
+    "Fancy Fish Sauce": 10
+  },
+  "Bean Salad@3": {
+    "Beans": 8,
+    "Carrots": 8,
+    "Special Fish Sauce": 10
+  },
+  "Beef Sandwich": {
+    "Bread": 36,
+    "Raw Beef": 72,
+    "Cow's Butter": 18
+  },
+  "Beef Sandwich@1": {
+    "Bread": 36,
+    "Raw Beef": 72,
+    "Cow's Butter": 18,
+    "Basic Fish Sauce": 90
+  },
+  "Beef Sandwich@2": {
+    "Bread": 36,
+    "Raw Beef": 72,
+    "Cow's Butter": 18,
+    "Fancy Fish Sauce": 90
+  },
+  "Beef Sandwich@3": {
+    "Bread": 36,
+    "Raw Beef": 72,
+    "Cow's Butter": 18,
+    "Special Fish Sauce": 90
+  },
+  "Beef Stew": {
+    "Pumpkin": 36,
+    "Raw Beef": 72,
+    "Bread": 36
+  },
+  "Beef Stew@1": {
+    "Pumpkin": 36,
+    "Raw Beef": 72,
+    "Bread": 36,
+    "Basic Fish Sauce": 90
+  },
+  "Beef Stew@2": {
+    "Pumpkin": 36,
+    "Raw Beef": 72,
+    "Bread": 36,
+    "Fancy Fish Sauce": 90
+  },
+  "Beef Stew@3": {
+    "Pumpkin": 36,
+    "Raw Beef": 72,
+    "Bread": 36,
+    "Special Fish Sauce": 90
+  },
+  "Blackbog Clam": {
+    "undefined": 30
+  },
+  "Blackbog Clam Soup": {
+    "Blackbog Clam": 1,
+    "Cabbage": 6,
+    "Dragon Teasel": 6,
+    "Raw Goose": 6
+  },
+  "Blackbog Clam Soup@1": {
+    "Blackbog Clam": 1,
+    "Cabbage": 6,
+    "Dragon Teasel": 6,
+    "Raw Goose": 6,
+    "Basic Fish Sauce": 27
+  },
+  "Blackbog Clam Soup@2": {
+    "Blackbog Clam": 1,
+    "Cabbage": 6,
+    "Dragon Teasel": 6,
+    "Raw Goose": 6,
+    "Fancy Fish Sauce": 27
+  },
+  "Blackbog Clam Soup@3": {
+    "Blackbog Clam": 1,
+    "Cabbage": 6,
+    "Dragon Teasel": 6,
+    "Raw Goose": 6,
+    "Special Fish Sauce": 27
+  },
+  "Bluefin Tuna": {
+    "undefined": 10
+  },
+  "Bluescale Cod": {
+    "undefined": 4
+  },
+  "Bluescale Pike": {
+    "undefined": 4
+  },
+  "Brightscale Zander": {
+    "undefined": 8
+  },
+  "Cabbage Soup": {
+    "Cabbage": 144
+  },
+  "Cabbage Soup@1": {
+    "Cabbage": 144,
+    "Basic Fish Sauce": 90
+  },
+  "Cabbage Soup@2": {
+    "Cabbage": 144,
+    "Fancy Fish Sauce": 90
+  },
+  "Cabbage Soup@3": {
+    "Cabbage": 144,
+    "Special Fish Sauce": 90
+  },
+  "Carrot Soup": {
+    "Carrots": 16
+  },
+  "Carrot Soup@1": {
+    "Carrots": 16,
+    "Basic Fish Sauce": 10
+  },
+  "Carrot Soup@2": {
+    "Carrots": 16,
+    "Fancy Fish Sauce": 10
+  },
+  "Carrot Soup@3": {
+    "Carrots": 16,
+    "Special Fish Sauce": 10
+  },
+  "Chicken Pie": {
+    "Sheaf of Wheat": 2,
+    "Raw Chicken": 8,
+    "Flour": 4
+  },
+  "Chicken Pie@1": {
+    "Sheaf of Wheat": 2,
+    "Raw Chicken": 8,
+    "Flour": 4,
+    "Basic Fish Sauce": 10
+  },
+  "Chicken Pie@2": {
+    "Sheaf of Wheat": 2,
+    "Raw Chicken": 8,
+    "Flour": 4,
+    "Fancy Fish Sauce": 10
+  },
+  "Chicken Pie@3": {
+    "Sheaf of Wheat": 2,
+    "Raw Chicken": 8,
+    "Flour": 4,
+    "Special Fish Sauce": 10
+  },
+  "Chocolate": {
+    "Surprise Egg": 2
+  },
+  "Clearhaze Snapper": {
+    "undefined": 20
+  },
+  "Common Herring": {
+    "undefined": 1
+  },
+  "Common Rudd": {
+    "undefined": 1
+  },
+  "Danglemouth Catfish": {
+    "undefined": 10
+  },
+  "Deadwater Eel": {
+    "undefined": 30
+  },
+  "Deadwater Eel Stew": {
+    "Deadwater Eel": 1,
+    "Pumpkin": 6,
+    "Ghoul Yarrow": 6,
+    "Cow's Milk": 6
+  },
+  "Deadwater Eel Stew@1": {
+    "Deadwater Eel": 1,
+    "Pumpkin": 6,
+    "Ghoul Yarrow": 6,
+    "Cow's Milk": 6,
+    "Basic Fish Sauce": 27
+  },
+  "Deadwater Eel Stew@2": {
+    "Deadwater Eel": 1,
+    "Pumpkin": 6,
+    "Ghoul Yarrow": 6,
+    "Cow's Milk": 6,
+    "Fancy Fish Sauce": 27
+  },
+  "Deadwater Eel Stew@3": {
+    "Deadwater Eel": 1,
+    "Pumpkin": 6,
+    "Ghoul Yarrow": 6,
+    "Cow's Milk": 6,
+    "Special Fish Sauce": 27
+  },
+  "Deepwater Kraken": {
+    "undefined": 49
+  },
+  "Deepwater Kraken Salad": {
+    "Deepwater Kraken": 1,
+    "Potatoes": 6,
+    "Elusive Foxglove": 6,
+    "Raw Mutton": 6
+  },
+  "Deepwater Kraken Salad@1": {
+    "Deepwater Kraken": 1,
+    "Potatoes": 6,
+    "Elusive Foxglove": 6,
+    "Raw Mutton": 6,
+    "Basic Fish Sauce": 27
+  },
+  "Deepwater Kraken Salad@2": {
+    "Deepwater Kraken": 1,
+    "Potatoes": 6,
+    "Elusive Foxglove": 6,
+    "Raw Mutton": 6,
+    "Fancy Fish Sauce": 27
+  },
+  "Deepwater Kraken Salad@3": {
+    "Deepwater Kraken": 1,
+    "Potatoes": 6,
+    "Elusive Foxglove": 6,
+    "Raw Mutton": 6,
+    "Special Fish Sauce": 27
+  },
+  "Drybrook Crab": {
+    "undefined": 20
+  },
+  "Dusthole Crab": {
+    "undefined": 30
+  },
+  "Fancy Fish Sauce": {
+    "Chopped Fish": 45,
+    "Seaweed": 3
+  },
+  "Flatshore Plaice": {
+    "undefined": 3
+  },
+  "Frostpeak Deadeye": {
+    "undefined": 30
+  },
+  "Frostpeak Deadeye Pie": {
+    "Frostpeak Deadeye": 1,
+    "Bundle of Corn": 6,
+    "Firetouched Mullein": 6,
+    "Raw Pork": 6
+  },
+  "Frostpeak Deadeye Pie@1": {
+    "Frostpeak Deadeye": 1,
+    "Bundle of Corn": 6,
+    "Firetouched Mullein": 6,
+    "Raw Pork": 6,
+    "Basic Fish Sauce": 27
+  },
+  "Frostpeak Deadeye Pie@2": {
+    "Frostpeak Deadeye": 1,
+    "Bundle of Corn": 6,
+    "Firetouched Mullein": 6,
+    "Raw Pork": 6,
+    "Fancy Fish Sauce": 27
+  },
+  "Frostpeak Deadeye Pie@3": {
+    "Frostpeak Deadeye": 1,
+    "Bundle of Corn": 6,
+    "Firetouched Mullein": 6,
+    "Raw Pork": 6,
+    "Special Fish Sauce": 27
+  },
+  "Goat Sandwich": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Goat's Butter": 2
+  },
+  "Goat Sandwich@1": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Goat's Butter": 2,
+    "Basic Fish Sauce": 10
+  },
+  "Goat Sandwich@2": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Goat's Butter": 2,
+    "Fancy Fish Sauce": 10
+  },
+  "Goat Sandwich@3": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Goat's Butter": 2,
+    "Special Fish Sauce": 10
+  },
+  "Goat Stew": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Turnips": 4
+  },
+  "Goat Stew@1": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Turnips": 4,
+    "Basic Fish Sauce": 10
+  },
+  "Goat Stew@2": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Turnips": 4,
+    "Fancy Fish Sauce": 10
+  },
+  "Goat Stew@3": {
+    "Bread": 4,
+    "Raw Goat": 8,
+    "Turnips": 4,
+    "Special Fish Sauce": 10
+  },
+  "Goose Pie": {
+    "Cabbage": 6,
+    "Raw Goose": 24,
+    "Flour": 12,
+    "Goat's Milk": 6
+  },
+  "Goose Pie@1": {
+    "Cabbage": 6,
+    "Raw Goose": 24,
+    "Flour": 12,
+    "Goat's Milk": 6,
+    "Basic Fish Sauce": 30
+  },
+  "Goose Pie@2": {
+    "Cabbage": 6,
+    "Raw Goose": 24,
+    "Flour": 12,
+    "Goat's Milk": 6,
+    "Fancy Fish Sauce": 30
+  },
+  "Goose Pie@3": {
+    "Cabbage": 6,
+    "Raw Goose": 24,
+    "Flour": 12,
+    "Goat's Milk": 6,
+    "Special Fish Sauce": 30
+  },
+  "Greenmoor Clam": {
+    "undefined": 10
+  },
+  "Greenmoor Clam Soup": {
+    "Greenmoor Clam": 1,
+    "Carrots": 2
+  },
+  "Greenmoor Clam Soup@1": {
+    "Greenmoor Clam": 1,
+    "Carrots": 2,
+    "Basic Fish Sauce": 3
+  },
+  "Greenmoor Clam Soup@2": {
+    "Greenmoor Clam": 1,
+    "Carrots": 2,
+    "Fancy Fish Sauce": 3
+  },
+  "Greenmoor Clam Soup@3": {
+    "Greenmoor Clam": 1,
+    "Carrots": 2,
+    "Special Fish Sauce": 3
+  },
+  "Greenriver Eel": {
+    "undefined": 10
+  },
+  "Greenriver Eel Stew": {
+    "Greenriver Eel": 1,
+    "Turnips": 1,
+    "Crenellated Burdock": 1
+  },
+  "Greenriver Eel Stew@1": {
+    "Greenriver Eel": 1,
+    "Turnips": 1,
+    "Crenellated Burdock": 1,
+    "Basic Fish Sauce": 3
+  },
+  "Greenriver Eel Stew@2": {
+    "Greenriver Eel": 1,
+    "Turnips": 1,
+    "Crenellated Burdock": 1,
+    "Fancy Fish Sauce": 3
+  },
+  "Greenriver Eel Stew@3": {
+    "Greenriver Eel": 1,
+    "Turnips": 1,
+    "Crenellated Burdock": 1,
+    "Special Fish Sauce": 3
+  },
+  "Lowriver Crab": {
+    "undefined": 10
+  },
+  "Midwater Octopus": {
+    "undefined": 33
+  },
+  "Midwater Octopus Salad": {
+    "Midwater Octopus": 1,
+    "Turnips": 2,
+    "Crenellated Burdock": 2,
+    "Raw Goat": 2
+  },
+  "Midwater Octopus Salad@1": {
+    "Midwater Octopus": 1,
+    "Turnips": 2,
+    "Crenellated Burdock": 2,
+    "Raw Goat": 2,
+    "Basic Fish Sauce": 9
+  },
+  "Midwater Octopus Salad@2": {
+    "Midwater Octopus": 1,
+    "Turnips": 2,
+    "Crenellated Burdock": 2,
+    "Raw Goat": 2,
+    "Fancy Fish Sauce": 9
+  },
+  "Midwater Octopus Salad@3": {
+    "Midwater Octopus": 1,
+    "Turnips": 2,
+    "Crenellated Burdock": 2,
+    "Raw Goat": 2,
+    "Special Fish Sauce": 9
+  },
+  "Mountain Blindeye": {
+    "undefined": 20
+  },
+  "Mountain Blindeye Pie": {
+    "Mountain Blindeye": 1,
+    "Cabbage": 2,
+    "Dragon Teasel": 2,
+    "Goose Eggs": 2
+  },
+  "Mountain Blindeye Pie@1": {
+    "Mountain Blindeye": 1,
+    "Cabbage": 2,
+    "Dragon Teasel": 2,
+    "Goose Eggs": 2,
+    "Basic Fish Sauce": 9
+  },
+  "Mountain Blindeye Pie@2": {
+    "Mountain Blindeye": 1,
+    "Cabbage": 2,
+    "Dragon Teasel": 2,
+    "Goose Eggs": 2,
+    "Fancy Fish Sauce": 9
+  },
+  "Mountain Blindeye Pie@3": {
+    "Mountain Blindeye": 1,
+    "Cabbage": 2,
+    "Dragon Teasel": 2,
+    "Goose Eggs": 2,
+    "Special Fish Sauce": 9
+  },
+  "Murkwater Clam": {
+    "undefined": 20
+  },
+  "Murkwater Clam Soup": {
+    "Murkwater Clam": 1,
+    "Sheaf of Wheat": 2,
+    "Brightleaf Comfrey": 2,
+    "Raw Chicken": 2
+  },
+  "Murkwater Clam Soup@1": {
+    "Murkwater Clam": 1,
+    "Sheaf of Wheat": 2,
+    "Brightleaf Comfrey": 2,
+    "Raw Chicken": 2,
+    "Basic Fish Sauce": 9
+  },
+  "Murkwater Clam Soup@2": {
+    "Murkwater Clam": 1,
+    "Sheaf of Wheat": 2,
+    "Brightleaf Comfrey": 2,
+    "Raw Chicken": 2,
+    "Fancy Fish Sauce": 9
+  },
+  "Murkwater Clam Soup@3": {
+    "Murkwater Clam": 1,
+    "Sheaf of Wheat": 2,
+    "Brightleaf Comfrey": 2,
+    "Raw Chicken": 2,
+    "Special Fish Sauce": 9
+  },
+  "Mutton Sandwich": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Sheep's Butter": 6
+  },
+  "Mutton Sandwich@1": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Sheep's Butter": 6,
+    "Basic Fish Sauce": 30
+  },
+  "Mutton Sandwich@2": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Sheep's Butter": 6,
+    "Fancy Fish Sauce": 30
+  },
+  "Mutton Sandwich@3": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Sheep's Butter": 6,
+    "Special Fish Sauce": 30
+  },
+  "Mutton Stew": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Potatoes": 12
+  },
+  "Mutton Stew@1": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Potatoes": 12,
+    "Basic Fish Sauce": 30
+  },
+  "Mutton Stew@2": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Potatoes": 12,
+    "Fancy Fish Sauce": 30
+  },
+  "Mutton Stew@3": {
+    "Bread": 12,
+    "Raw Mutton": 24,
+    "Potatoes": 12,
+    "Special Fish Sauce": 30
+  },
+  "Avalonian Chicken Omelette": {
+    "Goat's Milk": 4,
+    "Raw Chicken": 8,
+    "Hen Eggs": 2,
+    "Avalonian Energy": 10
+  },
+  "Avalonian Chicken Omelette@1": {
+    "Goat's Milk": 4,
+    "Raw Chicken": 8,
+    "Hen Eggs": 2,
+    "Avalonian Energy": 10,
+    "Basic Fish Sauce": 10
+  },
+  "Avalonian Chicken Omelette@2": {
+    "Goat's Milk": 4,
+    "Raw Chicken": 8,
+    "Hen Eggs": 2,
+    "Avalonian Energy": 10,
+    "Fancy Fish Sauce": 10
+  },
+  "Avalonian Chicken Omelette@3": {
+    "Goat's Milk": 4,
+    "Raw Chicken": 8,
+    "Hen Eggs": 2,
+    "Avalonian Energy": 10,
+    "Special Fish Sauce": 10
+  },
+  "Avalonian Goose Omelette": {
+    "Sheep's Milk": 12,
+    "Raw Goose": 24,
+    "Goose Eggs": 6,
+    "Avalonian Energy": 30
+  },
+  "Avalonian Goose Omelette@1": {
+    "Sheep's Milk": 12,
+    "Raw Goose": 24,
+    "Goose Eggs": 6,
+    "Avalonian Energy": 30,
+    "Basic Fish Sauce": 30
+  },
+  "Avalonian Goose Omelette@2": {
+    "Sheep's Milk": 12,
+    "Raw Goose": 24,
+    "Goose Eggs": 6,
+    "Avalonian Energy": 30,
+    "Fancy Fish Sauce": 30
+  },
+  "Avalonian Goose Omelette@3": {
+    "Sheep's Milk": 12,
+    "Raw Goose": 24,
+    "Goose Eggs": 6,
+    "Avalonian Energy": 30,
+    "Special Fish Sauce": 30
+  },
+  "Avalonian Pork Omelette": {
+    "Cow's Milk": 36,
+    "Raw Pork": 72,
+    "Goose Eggs": 18,
+    "Avalonian Energy": 90
+  },
+  "Avalonian Pork Omelette@1": {
+    "Cow's Milk": 36,
+    "Raw Pork": 72,
+    "Goose Eggs": 18,
+    "Avalonian Energy": 90,
+    "Basic Fish Sauce": 90
+  },
+  "Avalonian Pork Omelette@2": {
+    "Cow's Milk": 36,
+    "Raw Pork": 72,
+    "Goose Eggs": 18,
+    "Avalonian Energy": 90,
+    "Fancy Fish Sauce": 90
+  },
+  "Avalonian Pork Omelette@3": {
+    "Cow's Milk": 36,
+    "Raw Pork": 72,
+    "Goose Eggs": 18,
+    "Avalonian Energy": 90,
+    "Special Fish Sauce": 90
+  },
+  "Chicken Omelette": {
+    "Sheaf of Wheat": 4,
+    "Raw Chicken": 8,
+    "Hen Eggs": 2
+  },
+  "Chicken Omelette@1": {
+    "Sheaf of Wheat": 4,
+    "Raw Chicken": 8,
+    "Hen Eggs": 2,
+    "Basic Fish Sauce": 10
+  },
+  "Chicken Omelette@2": {
+    "Sheaf of Wheat": 4,
+    "Raw Chicken": 8,
+    "Hen Eggs": 2,
+    "Fancy Fish Sauce": 10
+  },
+  "Chicken Omelette@3": {
+    "Sheaf of Wheat": 4,
+    "Raw Chicken": 8,
+    "Hen Eggs": 2,
+    "Special Fish Sauce": 10
+  },
+  "Drybrook Crab Omelette": {
+    "Drybrook Crab": 1,
+    "Cabbage": 2,
+    "Dragon Teasel": 2,
+    "Goose Eggs": 2
+  },
+  "Drybrook Crab Omelette@1": {
+    "Drybrook Crab": 1,
+    "Cabbage": 2,
+    "Dragon Teasel": 2,
+    "Goose Eggs": 2,
+    "Basic Fish Sauce": 9
+  },
+  "Drybrook Crab Omelette@2": {
+    "Drybrook Crab": 1,
+    "Cabbage": 2,
+    "Dragon Teasel": 2,
+    "Goose Eggs": 2,
+    "Fancy Fish Sauce": 9
+  },
+  "Drybrook Crab Omelette@3": {
+    "Drybrook Crab": 1,
+    "Cabbage": 2,
+    "Dragon Teasel": 2,
+    "Goose Eggs": 2,
+    "Special Fish Sauce": 9
+  },
+  "Dusthole Crab Omelette": {
+    "Dusthole Crab": 1,
+    "Bundle of Corn": 6,
+    "Firetouched Mullein": 6,
+    "Raw Pork": 6
+  },
+  "Dusthole Crab Omelette@1": {
+    "Dusthole Crab": 1,
+    "Bundle of Corn": 6,
+    "Firetouched Mullein": 6,
+    "Raw Pork": 6,
+    "Basic Fish Sauce": 27
+  },
+  "Dusthole Crab Omelette@2": {
+    "Dusthole Crab": 1,
+    "Bundle of Corn": 6,
+    "Firetouched Mullein": 6,
+    "Raw Pork": 6,
+    "Fancy Fish Sauce": 27
+  },
+  "Dusthole Crab Omelette@3": {
+    "Dusthole Crab": 1,
+    "Bundle of Corn": 6,
+    "Firetouched Mullein": 6,
+    "Raw Pork": 6,
+    "Special Fish Sauce": 27
+  },
+  "Goose Omelette": {
+    "Cabbage": 12,
+    "Raw Goose": 24,
+    "Goose Eggs": 6
+  },
+  "Goose Omelette@1": {
+    "Cabbage": 12,
+    "Raw Goose": 24,
+    "Goose Eggs": 6,
+    "Basic Fish Sauce": 30
+  },
+  "Goose Omelette@2": {
+    "Cabbage": 12,
+    "Raw Goose": 24,
+    "Goose Eggs": 6,
+    "Fancy Fish Sauce": 30
+  },
+  "Goose Omelette@3": {
+    "Cabbage": 12,
+    "Raw Goose": 24,
+    "Goose Eggs": 6,
+    "Special Fish Sauce": 30
+  },
+  "Lowriver Crab Omelette": {
+    "Lowriver Crab": 1,
+    "Brightleaf Comfrey": 1,
+    "Hen Eggs": 1
+  },
+  "Lowriver Crab Omelette@1": {
+    "Lowriver Crab": 1,
+    "Brightleaf Comfrey": 1,
+    "Hen Eggs": 1,
+    "Basic Fish Sauce": 3
+  },
+  "Lowriver Crab Omelette@2": {
+    "Lowriver Crab": 1,
+    "Brightleaf Comfrey": 1,
+    "Hen Eggs": 1,
+    "Fancy Fish Sauce": 3
+  },
+  "Lowriver Crab Omelette@3": {
+    "Lowriver Crab": 1,
+    "Brightleaf Comfrey": 1,
+    "Hen Eggs": 1,
+    "Special Fish Sauce": 3
+  },
+  "Pork Omelette": {
+    "Bundle of Corn": 36,
+    "Raw Pork": 72,
+    "Goose Eggs": 18
+  },
+  "Pork Omelette@1": {
+    "Bundle of Corn": 36,
+    "Raw Pork": 72,
+    "Goose Eggs": 18,
+    "Basic Fish Sauce": 90
+  },
+  "Pork Omelette@2": {
+    "Bundle of Corn": 36,
+    "Raw Pork": 72,
+    "Goose Eggs": 18,
+    "Fancy Fish Sauce": 90
+  },
+  "Pork Omelette@3": {
+    "Bundle of Corn": 36,
+    "Raw Pork": 72,
+    "Goose Eggs": 18,
+    "Special Fish Sauce": 90
+  },
+  "undefined": {
+    "": 6
+  },
+  "undefined@1": {
+    "": 900
+  },
+  "undefined@2": {
+    "": 337
+  },
+  "Pork Pie": {
+    "Bundle of Corn": 18,
+    "Raw Pork": 72,
+    "Flour": 36,
+    "Sheep's Milk": 18
+  },
+  "Pork Pie@1": {
+    "Bundle of Corn": 18,
+    "Raw Pork": 72,
+    "Flour": 36,
+    "Sheep's Milk": 18,
+    "Basic Fish Sauce": 90
+  },
+  "Pork Pie@2": {
+    "Bundle of Corn": 18,
+    "Raw Pork": 72,
+    "Flour": 36,
+    "Sheep's Milk": 18,
+    "Fancy Fish Sauce": 90
+  },
+  "Pork Pie@3": {
+    "Bundle of Corn": 18,
+    "Raw Pork": 72,
+    "Flour": 36,
+    "Sheep's Milk": 18,
+    "Special Fish Sauce": 90
+  },
+  "Potato Salad": {
+    "Potatoes": 72,
+    "Cabbage": 72
+  },
+  "Potato Salad@1": {
+    "Potatoes": 72,
+    "Cabbage": 72,
+    "Basic Fish Sauce": 90
+  },
+  "Potato Salad@2": {
+    "Potatoes": 72,
+    "Cabbage": 72,
+    "Fancy Fish Sauce": 90
+  },
+  "Potato Salad@3": {
+    "Potatoes": 72,
+    "Cabbage": 72,
+    "Special Fish Sauce": 90
+  },
+  "Puremist Snapper": {
+    "undefined": 30
+  },
+  "Redspring Eel": {
+    "undefined": 20
+  },
+  "Redspring Eel Stew": {
+    "Redspring Eel": 1,
+    "Potatoes": 2,
+    "Elusive Foxglove": 2,
+    "Sheep's Milk": 2
+  },
+  "Redspring Eel Stew@1": {
+    "Redspring Eel": 1,
+    "Potatoes": 2,
+    "Elusive Foxglove": 2,
+    "Sheep's Milk": 2,
+    "Basic Fish Sauce": 9
+  },
+  "Redspring Eel Stew@2": {
+    "Redspring Eel": 1,
+    "Potatoes": 2,
+    "Elusive Foxglove": 2,
+    "Sheep's Milk": 2,
+    "Fancy Fish Sauce": 9
+  },
+  "Redspring Eel Stew@3": {
+    "Redspring Eel": 1,
+    "Potatoes": 2,
+    "Elusive Foxglove": 2,
+    "Sheep's Milk": 2,
+    "Special Fish Sauce": 9
+  },
+  "River Sturgeon": {
+    "undefined": 14
+  },
+  "Roast Chicken": {
+    "Raw Chicken": 8,
+    "Beans": 4,
+    "Goat's Milk": 4
+  },
+  "Roast Chicken@1": {
+    "Raw Chicken": 8,
+    "Beans": 4,
+    "Goat's Milk": 4,
+    "Basic Fish Sauce": 10
+  },
+  "Roast Chicken@2": {
+    "Raw Chicken": 8,
+    "Beans": 4,
+    "Goat's Milk": 4,
+    "Fancy Fish Sauce": 10
+  },
+  "Roast Chicken@3": {
+    "Raw Chicken": 8,
+    "Beans": 4,
+    "Goat's Milk": 4,
+    "Special Fish Sauce": 10
+  },
+  "Roast Goose": {
+    "Raw Goose": 24,
+    "Cabbage": 12,
+    "Sheep's Milk": 12
+  },
+  "Roast Goose@1": {
+    "Raw Goose": 24,
+    "Cabbage": 12,
+    "Sheep's Milk": 12,
+    "Basic Fish Sauce": 30
+  },
+  "Roast Goose@2": {
+    "Raw Goose": 24,
+    "Cabbage": 12,
+    "Sheep's Milk": 12,
+    "Fancy Fish Sauce": 30
+  },
+  "Roast Goose@3": {
+    "Raw Goose": 24,
+    "Cabbage": 12,
+    "Sheep's Milk": 12,
+    "Special Fish Sauce": 30
+  },
+  "Roast Pork": {
+    "Raw Pork": 72,
+    "Bundle of Corn": 36,
+    "Cow's Milk": 36
+  },
+  "Roast Pork@1": {
+    "Raw Pork": 72,
+    "Bundle of Corn": 36,
+    "Cow's Milk": 36,
+    "Basic Fish Sauce": 90
+  },
+  "Roast Pork@2": {
+    "Raw Pork": 72,
+    "Bundle of Corn": 36,
+    "Cow's Milk": 36,
+    "Fancy Fish Sauce": 90
+  },
+  "Roast Pork@3": {
+    "Raw Pork": 72,
+    "Bundle of Corn": 36,
+    "Cow's Milk": 36,
+    "Special Fish Sauce": 90
+  },
+  "Roasted Clearhaze Snapper": {
+    "Clearhaze Snapper": 1,
+    "Dragon Teasel": 2,
+    "Cabbage": 2,
+    "Sheep's Milk": 2
+  },
+  "Roasted Clearhaze Snapper@1": {
+    "Clearhaze Snapper": 1,
+    "Dragon Teasel": 2,
+    "Cabbage": 2,
+    "Sheep's Milk": 2,
+    "Basic Fish Sauce": 9
+  },
+  "Roasted Clearhaze Snapper@2": {
+    "Clearhaze Snapper": 1,
+    "Dragon Teasel": 2,
+    "Cabbage": 2,
+    "Sheep's Milk": 2,
+    "Fancy Fish Sauce": 9
+  },
+  "Roasted Clearhaze Snapper@3": {
+    "Clearhaze Snapper": 1,
+    "Dragon Teasel": 2,
+    "Cabbage": 2,
+    "Sheep's Milk": 2,
+    "Special Fish Sauce": 9
+  },
+  "Roasted Puremist Snapper": {
+    "Puremist Snapper": 1,
+    "Firetouched Mullein": 6,
+    "Bundle of Corn": 6,
+    "Cow's Milk": 6
+  },
+  "Roasted Puremist Snapper@1": {
+    "Puremist Snapper": 1,
+    "Firetouched Mullein": 6,
+    "Bundle of Corn": 6,
+    "Cow's Milk": 6,
+    "Basic Fish Sauce": 27
+  },
+  "Roasted Puremist Snapper@2": {
+    "Puremist Snapper": 1,
+    "Firetouched Mullein": 6,
+    "Bundle of Corn": 6,
+    "Cow's Milk": 6,
+    "Fancy Fish Sauce": 27
+  },
+  "Roasted Puremist Snapper@3": {
+    "Puremist Snapper": 1,
+    "Firetouched Mullein": 6,
+    "Bundle of Corn": 6,
+    "Cow's Milk": 6,
+    "Special Fish Sauce": 27
+  },
+  "Roasted Whitefog Snapper": {
+    "Whitefog Snapper": 1,
+    "Brightleaf Comfrey": 1,
+    "Goat's Milk": 1
+  },
+  "Roasted Whitefog Snapper@1": {
+    "Whitefog Snapper": 1,
+    "Brightleaf Comfrey": 1,
+    "Goat's Milk": 1,
+    "Basic Fish Sauce": 3
+  },
+  "Roasted Whitefog Snapper@2": {
+    "Whitefog Snapper": 1,
+    "Brightleaf Comfrey": 1,
+    "Goat's Milk": 1,
+    "Fancy Fish Sauce": 3
+  },
+  "Roasted Whitefog Snapper@3": {
+    "Whitefog Snapper": 1,
+    "Brightleaf Comfrey": 1,
+    "Goat's Milk": 1,
+    "Special Fish Sauce": 3
+  },
+  "Rushwater Lurcher": {
+    "undefined": 20
+  },
+  "Rushwater Lurcher Sandwich": {
+    "Rushwater Lurcher": 1,
+    "Potatoes": 2,
+    "Elusive Foxglove": 2,
+    "Sheep's Butter": 2
+  },
+  "Rushwater Lurcher Sandwich@1": {
+    "Rushwater Lurcher": 1,
+    "Potatoes": 2,
+    "Elusive Foxglove": 2,
+    "Sheep's Butter": 2,
+    "Basic Fish Sauce": 9
+  },
+  "Rushwater Lurcher Sandwich@2": {
+    "Rushwater Lurcher": 1,
+    "Potatoes": 2,
+    "Elusive Foxglove": 2,
+    "Sheep's Butter": 2,
+    "Fancy Fish Sauce": 9
+  },
+  "Rushwater Lurcher Sandwich@3": {
+    "Rushwater Lurcher": 1,
+    "Potatoes": 2,
+    "Elusive Foxglove": 2,
+    "Sheep's Butter": 2,
+    "Special Fish Sauce": 9
+  },
+  "Seaweed Salad": {
+    "Seaweed": 10
+  },
+  "Shallowshore Squid": {
+    "undefined": 16
+  },
+  "Shallowshore Squid Salad": {
+    "Shallowshore Squid": 1,
+    "Beans": 1,
+    "Arcane Agaric": 1
+  },
+  "Shallowshore Squid Salad@1": {
+    "Shallowshore Squid": 1,
+    "Beans": 1,
+    "Arcane Agaric": 1,
+    "Basic Fish Sauce": 3
+  },
+  "Shallowshore Squid Salad@2": {
+    "Shallowshore Squid": 1,
+    "Beans": 1,
+    "Arcane Agaric": 1,
+    "Fancy Fish Sauce": 3
+  },
+  "Shallowshore Squid Salad@3": {
+    "Shallowshore Squid": 1,
+    "Beans": 1,
+    "Arcane Agaric": 1,
+    "Special Fish Sauce": 3
+  },
+  "Special Fish Sauce": {
+    "Chopped Fish": 135,
+    "Seaweed": 9
+  },
+  "Spotted Trout": {
+    "undefined": 6
+  },
+  "Spotted Wolffish": {
+    "undefined": 6
+  },
+  "Steelscale Swordfish": {
+    "undefined": 14
+  },
+  "Stonestream Lurcher": {
+    "undefined": 10
+  },
+  "Stonestream Lurcher Sandwich": {
+    "Stonestream Lurcher": 1,
+    "Turnips": 1,
+    "Goat's Butter": 1
+  },
+  "Stonestream Lurcher Sandwich@1": {
+    "Stonestream Lurcher": 1,
+    "Turnips": 1,
+    "Goat's Butter": 1,
+    "Basic Fish Sauce": 3
+  },
+  "Stonestream Lurcher Sandwich@2": {
+    "Stonestream Lurcher": 1,
+    "Turnips": 1,
+    "Goat's Butter": 1,
+    "Fancy Fish Sauce": 3
+  },
+  "Stonestream Lurcher Sandwich@3": {
+    "Stonestream Lurcher": 1,
+    "Turnips": 1,
+    "Goat's Butter": 1,
+    "Special Fish Sauce": 3
+  },
+  "Striped Carp": {
+    "undefined": 2
+  },
+  "Striped Mackerel": {
+    "undefined": 2
+  },
+  "Strongfin Salmon": {
+    "undefined": 8
+  },
+  "Thunderfall Lurcher": {
+    "undefined": 30
+  },
+  "Thunderfall Lurcher Sandwich": {
+    "Thunderfall Lurcher": 1,
+    "Pumpkin": 6,
+    "Ghoul Yarrow": 6,
+    "Cow's Butter": 6
+  },
+  "Thunderfall Lurcher Sandwich@1": {
+    "Thunderfall Lurcher": 1,
+    "Pumpkin": 6,
+    "Ghoul Yarrow": 6,
+    "Cow's Butter": 6,
+    "Basic Fish Sauce": 27
+  },
+  "Thunderfall Lurcher Sandwich@2": {
+    "Thunderfall Lurcher": 1,
+    "Pumpkin": 6,
+    "Ghoul Yarrow": 6,
+    "Cow's Butter": 6,
+    "Fancy Fish Sauce": 27
+  },
+  "Thunderfall Lurcher Sandwich@3": {
+    "Thunderfall Lurcher": 1,
+    "Pumpkin": 6,
+    "Ghoul Yarrow": 6,
+    "Cow's Butter": 6,
+    "Special Fish Sauce": 27
+  },
+  "Turnip Salad": {
+    "Turnips": 24,
+    "Sheaf of Wheat": 24
+  },
+  "Turnip Salad@1": {
+    "Turnips": 24,
+    "Sheaf of Wheat": 24,
+    "Basic Fish Sauce": 30
+  },
+  "Turnip Salad@2": {
+    "Turnips": 24,
+    "Sheaf of Wheat": 24,
+    "Fancy Fish Sauce": 30
+  },
+  "Turnip Salad@3": {
+    "Turnips": 24,
+    "Sheaf of Wheat": 24,
+    "Special Fish Sauce": 30
+  },
+  "Upland Coldeye": {
+    "undefined": 10
+  },
+  "Upland Coldeye Pie": {
+    "Upland Coldeye": 1,
+    "Flour": 1,
+    "Hen Eggs": 1
+  },
+  "Upland Coldeye Pie@1": {
+    "Upland Coldeye": 1,
+    "Flour": 1,
+    "Hen Eggs": 1,
+    "Basic Fish Sauce": 3
+  },
+  "Upland Coldeye Pie@2": {
+    "Upland Coldeye": 1,
+    "Flour": 1,
+    "Hen Eggs": 1,
+    "Fancy Fish Sauce": 3
+  },
+  "Upland Coldeye Pie@3": {
+    "Upland Coldeye": 1,
+    "Flour": 1,
+    "Hen Eggs": 1,
+    "Special Fish Sauce": 3
+  },
+  "Wheat Soup": {
+    "Sheaf of Wheat": 48
+  },
+  "Wheat Soup@1": {
+    "Sheaf of Wheat": 48,
+    "Basic Fish Sauce": 30
+  },
+  "Wheat Soup@2": {
+    "Sheaf of Wheat": 48,
+    "Fancy Fish Sauce": 30
+  },
+  "Wheat Soup@3": {
+    "Sheaf of Wheat": 48,
+    "Special Fish Sauce": 30
+  },
+  "Whitefog Snapper": {
+    "undefined": 10
+  }
+}
