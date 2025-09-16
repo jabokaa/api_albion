@@ -16,7 +16,7 @@
             </div>
             <div class="col">
                 <select name="order_by" class="form-control">
-                    <option value="deferenca" {{ request('order_by') == 'deferenca' ? 'selected' : '' }}>Lucro</option>
+                    <option value="diferenca" {{ request('order_by') == 'diferenca' ? 'selected' : '' }}>Lucro</option>
                     <option value="vender_por" {{ request('order_by') == 'vender_por' ? 'selected' : '' }}>Preço Venda</option>
                     <option value="comprar_por" {{ request('order_by') == 'comprar_por' ? 'selected' : '' }}>Preço Compra</option>
                 </select>
@@ -54,7 +54,7 @@
                 <td>{{ $row->external_id }}</td>
                 <td>{{ $row->name_pt }} / {{ $row->name_sp }}</td>
                 <td>{{ $row->quality }}</td>
-                <td>{{ number_format($row->deferenca, 2, ',', '.') }}</td>
+                <td>{{ number_format($row->diferenca, 2, ',', '.') }}</td>
                 <td>{{ $row->porcemtagem_lucro }}%</td>
                 <td>{{ $row->comprar_em }} </td>
                 <td>{{ $row->item_count_comprar }}</td>

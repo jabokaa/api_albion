@@ -6,20 +6,18 @@
     <form method="GET" class="mb-4">
         <div class="row">
             <div class="col">
-                <input type="text" name="city" class="form-control" placeholder="Cidade" value="{{ request('city') }}">
+                <input type="text" name="city_sale" class="form-control" placeholder="Cidade da venda" value="{{ request('city_sale') }}">
             </div>
             <div class="col">
-                <input type="number" name="quality" class="form-control" placeholder="Qualidade" value="{{ request('quality') }}">
+                <input type="text" name="city_buy" class="form-control" placeholder="Cidade da compra" value="{{ request('city_buy') }}">
             </div>
             <div class="col">
-                <input type="number" name="max_lucro" class="form-control" placeholder="% Lucro Máximo" value="{{ request('max_lucro', 150) }}">
+                <input type="number" name="max_lucro" class="form-control" placeholder="% Lucro Máximo" value="{{ request('max_lucro', 200) }}">
             </div>
             <div class="col">
                 <select name="order_by" class="form-control">
                     <option value="porcemtagem_lucro" {{ request('order_by') == 'porcemtagem_lucro' ? 'selected' : '' }}>Porcentagem Lucro</option>
-                    <option value="deferenca" {{ request('order_by') == 'deferenca' ? 'selected' : '' }}>Lucro</option>
-                    <option value="vender_por" {{ request('order_by') == 'vender_por' ? 'selected' : '' }}>Preço Venda</option>
-                    <option value="comprar_por" {{ request('order_by') == 'comprar_por' ? 'selected' : '' }}>Preço Compra</option>
+                    <option value="diferenca" {{ request('order_by') == 'diferenca' ? 'selected' : '' }}>Lucro</option>
                 </select>
             </div>
             <div class="col">
@@ -38,6 +36,7 @@
             <tr>
                 <th>External Id</th>
                 <th>Item</th>
+                <th>Encantamento</th>
                 <th>Qualidade</th>
                 <th>Lucro</th>
                 <th>Porcentagem Lucro</th>
@@ -56,8 +55,9 @@
             <tr>
                 <td>{{ $row->external_id }}</td>
                 <td>{{ $row->name_pt }} / {{ $row->name_sp }}</td>
+                <td>{{ $row->encantamento }}</td>
                 <td>{{ $row->quality }}</td>
-                <td>{{ number_format($row->deferenca, 2, ',', '.') }}</td>
+                <td>{{ number_format($row->diferenca, 2, ',', '.') }}</td>
                 <td>{{ number_format($row->porcemtagem_lucro, 2, ',', '.') }}%</td>
                 <td>{{ $row->comprar_em }} </td>
                 <td>-{{ number_format($row->comprar_por, 2, ',', '.') }}$</td>

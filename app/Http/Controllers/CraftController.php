@@ -11,7 +11,7 @@ class CraftController extends Controller
     {
         $city = $request->input('city');
         $quality = $request->input('quality');
-        $orderBy = $request->input('order_by', 'deferenca');
+        $orderBy = $request->input('order_by', 'diferenca');
         $orderDir = $request->input('order_dir', 'desc');
         $minCount = $request->input('min_count', 100);
 
@@ -21,13 +21,13 @@ class CraftController extends Controller
             iwp.name_pt,
             iwp.name_sp,
             iwp.quality,
-            iwp.deferenca,
+            iwp.diferenca,
             info_maior.city vender_em,
             info_maior.item_count item_count_vender,
             info_maior.price vender_por,
             info_menor.city comprar_em,
             info_menor.item_count item_count_comprar,
-            (iwp.deferenca/info_menor.price) * 100 as porcemtagem_lucro,
+            (iwp.diferenca/info_menor.price) * 100 as porcemtagem_lucro,
             info_menor.price comprar_por
         from
             (
@@ -39,7 +39,7 @@ class CraftController extends Controller
                     iwp.quality,
                     max(iwp.price) maior,
                     min(iwp.price) menor,
-                    max(iwp.price) - min(iwp.price) deferenca,
+                    max(iwp.price) - min(iwp.price) diferenca,
                     AVG(iwp.item_count) qtd_avg
                 from
                     items_weekly_prices iwp
@@ -77,7 +77,7 @@ class CraftController extends Controller
             info_menor.price = iwp.menor
             and info_menor.quality = iwp.quality
             and info_menor.item_id = iwp.item_id
-        WHERE (iwp.deferenca/info_menor.price) * 100 <= 150
+        WHERE (iwp.diferenca/info_menor.price) * 100 <= 150
         ";
 
         $bindings = [$minCount];
