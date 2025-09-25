@@ -28,19 +28,28 @@ class PopulateDayPrices extends Command
             $json = @file_get_contents($url);
 
             // Check for HTTP 429 Too Many Requests
-            if ($http_response_header && strpos($http_response_header[0], '429') !== false) {
+            if (
+                ($http_response_header && strpos($http_response_header[0], '429') !== false) ||
+                empty($json)
+            ) {
                 $countEndpoints = 0;
-                $this->warn("Recebeu HTTP 429 Too Many Requests! Esperando 1 minuto...");
+                $this->warn("Recebeu HTTP 429 Too Many Requests ou resposta vazia! Esperando 1 minuto...");
                 sleep(60); // espera 1 minuto
                 // Tenta novamente após esperar
                 $json = @file_get_contents($url);
-                if ($http_response_header && strpos($http_response_header[0], '429') !== false) {
-                    $this->warn("Ainda recebendo HTTP 429. Esperando 5 minutos...");
+                if (
+                    ($http_response_header && strpos($http_response_header[0], '429') !== false) ||
+                    empty($json)
+                ) {
+                    $this->warn("Ainda recebendo HTTP 429 ou resposta vazia. Esperando 5 minutos...");
                     sleep(300); // espera 5 minutos
                     $json = @file_get_contents($url);
-                    if ($http_response_header && strpos($http_response_header[0], '429') !== false) {
-                        $this->error("Ainda recebendo HTTP 429 após esperar 5 minutos. Pulando este chunk.");
-                        throw new \Exception("HTTP 429 Too Many Requests");
+                    if (
+                        ($http_response_header && strpos($http_response_header[0], '429') !== false) ||
+                        empty($json)
+                    ) {
+                        $this->error("Ainda recebendo HTTP 429 ou resposta vazia após esperar 5 minutos. Pulando este chunk.");
+                        throw new \Exception("HTTP 429 Too Many Requests ou resposta vazia");
                     }
                 }
             }

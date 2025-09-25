@@ -15,6 +15,7 @@
                 <a class="btn {{ request()->routeIs('transport.index') && request()->route('dataType') == 'diario' ? 'btn-primary active' : 'btn-light' }} border-0" href="{{ route('transport.index', ['dataType' => 'diario']) }}">Transporte Diário</a>
                 <a class="btn {{ request()->routeIs('craft.index') && request()->route('dataType') == 'semanal' ? 'btn-success active' : 'btn-light' }} border-0" href="{{ route('craft.index', ['dataType' => 'semanal']) }}">Craft Semanal</a>
                 <a class="btn {{ request()->routeIs('craft.index') && request()->route('dataType') == 'diario' ? 'btn-success active' : 'btn-light' }} border-0" href="{{ route('craft.index', ['dataType' => 'diario']) }}">Craft Diário</a>
+                    <a class="btn {{ request()->routeIs('items.index') ? 'btn-info active' : 'btn-light' }} border-0" href="{{ route('items.index') }}">Itens</a>
             </div>
         </div>
     </nav>

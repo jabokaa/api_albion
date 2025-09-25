@@ -15,6 +15,7 @@
                     <option value="Thetford" {{ request('city_sale') == 'Thetford' ? 'selected' : '' }}>Thetford</option>
                     <option value="Caerleon" {{ request('city_sale') == 'Caerleon' ? 'selected' : '' }}>Caerleon</option>
                     <option value="Black Market" {{ request('city_sale') == 'Black Market' ? 'selected' : '' }}>Black Market</option>
+                    <option value="Brecilien" {{ request('city_buy') == 'Brecilien' ? 'selected' : '' }}>Brecilien</option>
                 </select>
             </div>
             <div class="col">
@@ -27,6 +28,7 @@
                     <option value="Thetford" {{ request('city_buy') == 'Thetford' ? 'selected' : '' }}>Thetford</option>
                     <option value="Caerleon" {{ request('city_buy') == 'Caerleon' ? 'selected' : '' }}>Caerleon</option>
                     <option value="Black Market" {{ request('city_buy') == 'Black Market' ? 'selected' : '' }}>Black Market</option>
+                    <option value="Brecilien" {{ request('city_buy') == 'Brecilien' ? 'selected' : '' }}>Brecilien</option>
                 </select>
             </div>
             <div class="col">
@@ -106,6 +108,7 @@
                             <option value="Thetford">Thetford</option>
                             <option value="Caerleon">Caerleon</option>
                             <option value="Black Market">Black Market</option>
+                            <option value="Brecilien">Brecilien</option>
                         </select>
                     </div>
                     <div class="col">
@@ -118,6 +121,7 @@
                             <option value="Thetford">Thetford</option>
                             <option value="Caerleon">Caerleon</option>
                             <option value="Black Market">Black Market</option>
+                            <option value="Brecilien">Brecilien</option>
                         </select>
                     </div>
                                 <div class="col-auto">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Item;
 use App\Models\ItemsDayPrice;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -75,6 +76,7 @@ class TransportController extends Controller
 
         $query = DB::query()->fromSub($subQueryValoresDeCompraEVenda, 'idp')
             ->select(
+                'idp.item_id',
                 'idp.external_id',
                 DB::raw("
                     CASE 
@@ -110,5 +112,43 @@ class TransportController extends Controller
             // dd( $query->toSql(), $query->getBindings() );
         $results = $query->get();
         return view('transport.index', compact('results'));
+    }
+
+    public function show(Request $request, $dataType)
+    {
+
+        $table = $dataType !== 'semanal' ? 'items_day_prices' : 'items_weekly_prices';
+        $item = $request->item_id;
+    
+        $item = Item::join($table . ' as idp', function ($join) {
+                $join->on('items.id', '=', 'idp.item_id');
+            })->where('items.id', $item)
+            ->where('idp.price', '>', 0)
+            ->get();
+
+        $item = $item->toArray();
+        return response()->json($item);
+    }
+
+    public function showItem(Request $request, $dataType, $name)
+    {
+        $table = $dataType !== 'semanal' ? 'items_day_prices' : 'items_weekly_prices';
+        $items = Item::join($table . ' as idp', function ($join) {
+                $join->on('items.id', '=', 'idp.item_id');
+            })
+            ->where('items.name_pt', 'like', $name)
+            ->where('idp.price', '>', 0)
+            ->get();
+
+        $itemsArr = $items->toArray();
+        $info = null;
+        if (count($itemsArr) > 0) {
+            $info = [
+                'item_id' => $itemsArr[0]['item_id'],
+                'external_id' => $itemsArr[0]['external_id'],
+                'name_pt' => $itemsArr[0]['name_pt'],
+            ];
+        }
+        return view('transport.show_item', compact('itemsArr', 'info'));
     }
 }
