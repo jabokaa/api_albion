@@ -16,7 +16,8 @@ class TransportController extends Controller
 
         $orderBy = $request->input('order_by', 'porcemtagem_lucro');
         $orderDir = $request->input('order_dir', 'desc');
-        $maxLucro = $request->input('max_lucro', 200);
+    $maxLucro = $request->input('max_lucro', 200);
+    $minLucro = $request->input('min_lucro', 0);
 
         $tableMain = $dataType !== 'semanal' ? 'items_day_prices' : 'items_weekly_prices';
         $mainTable = DB::query()->from("$tableMain as idp");
@@ -107,6 +108,7 @@ class TransportController extends Controller
                     ->on('info_menor.quality', '=', 'idp.quality')
                     ->on('info_menor.item_id', '=', 'idp.item_id');
             })->where(DB::raw('(idp.diferenca / info_menor.price) * 100'), '<=', $maxLucro)
+            ->where('idp.diferenca', '>=', $minLucro)
             ->orderBy($orderBy, $orderDir);
 
             // dd( $query->toSql(), $query->getBindings() );

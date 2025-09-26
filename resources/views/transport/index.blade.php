@@ -32,6 +32,9 @@
                 </select>
             </div>
             <div class="col">
+                <input type="number" name="min_lucro" class="form-control" placeholder="Lucro Mínimo" value="{{ request('min_lucro', 0) }}">
+            </div>
+            <div class="col">
                 <input type="number" name="max_lucro" class="form-control" placeholder="% Lucro Máximo" value="{{ request('max_lucro', 200) }}">
             </div>
             <div class="col">
