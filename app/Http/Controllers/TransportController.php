@@ -111,7 +111,6 @@ class TransportController extends Controller
             ->where('idp.diferenca', '>=', $minLucro)
             ->orderBy($orderBy, $orderDir);
 
-            dd( $query->toSql(), $query->getBindings() );
         $results = $query->get();
         
         return view('transport.phone', compact('results'));
