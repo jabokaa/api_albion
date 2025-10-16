@@ -113,7 +113,8 @@ class TransportController extends Controller
 
             // dd( $query->toSql(), $query->getBindings() );
         $results = $query->get();
-        return view('transport.index', compact('results'));
+        
+        return view('transport.phone', compact('results'));
     }
 
     public function show(Request $request, $dataType)
