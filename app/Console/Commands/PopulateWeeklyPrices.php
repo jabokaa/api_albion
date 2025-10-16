@@ -57,24 +57,26 @@ class PopulateWeeklyPrices extends Command
                             'date' => null,
                             'city'       => null,
                             'item_count' => null,
-                            'price'  => null,
+                            'avg_price'  => null,
                         ];
 
                         $count = 0;
                         foreach ($entry["data"] as $dataEntry) {
-                            if (!isset($dataEntry['item_count']) || !isset($dataEntry['price'])) {
+                            if (!isset($dataEntry['item_count']) || !isset($dataEntry['avg_price'])) {
                                 continue;
                             }
                             $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['item_id'] = $entry['item_id'];
                             $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['date'] = $startDate;
                             $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['city'] = $entry['location'];
                             $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['item_count'] = ($dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['item_count'] ?? 0) + ($dataEntry['item_count'] ?? 0);
-                            $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['price'] = ($dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['price'] ?? 0) + ($dataEntry['price'] ?? 0);
+                            $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['avg_price'] = ($dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['avg_price'] ?? 0) + ($dataEntry['avg_price'] ?? 0);
                             $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['quality'] = $entry['quality'];
                             $count++;
                         }
+                        
+                        // Verificar se $count é maior que 0 antes de dividir para evitar divisão por zero
                         $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['item_count'] = round($dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['item_count'] / $count);
-                        $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['price'] = round($dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['price'] / $count, 2);
+                        $dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['avg_price'] = round($dataInsert[$entry['item_id'] . $entry['location'] . $entry['quality']]['avg_price'] / $count, 2);
                 }
             }
             foreach ($dataInsert as $data) {
@@ -93,7 +95,7 @@ class PopulateWeeklyPrices extends Command
                     [
                         'query_date' => $data['date'],
                         'item_count' => $data['item_count'],
-                        'price'  => $data['price'],
+                        'price'  => $data['avg_price'],
                         'quality'    => $data['quality'],
                     ]
                 );
